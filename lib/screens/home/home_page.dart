@@ -21,7 +21,20 @@ class _HomePageState extends State<HomePage> {
             child: AppBarDash(),
           ),
           SizedBox(height: 50.0),
+          
+          Row(
+children: <Widget>[
+  
+],
+          ),
           Expanded(
+           
+              child: Container(
+            width: 500,
+            height: 100,
+            child: ChartsDash(),
+          )),
+           Expanded(
            
               child: Container(
             width: 500,

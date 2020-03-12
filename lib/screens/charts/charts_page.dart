@@ -357,13 +357,13 @@ class _ChartsDash extends State<ChartsDash> {
           // vertical (the cross axis would be horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-             RaisedButton(
-              color: Colors.green,
-              onPressed: _chartStateChanger,
-            ),
-             Text(
-              'vvvvvvvv:',
-            ),
+            //  RaisedButton(
+            //   color: Colors.green,
+            //   onPressed: _chartStateChanger,
+            // ),
+            //  Text(
+            //   'vvvvvvvv:',
+            // ),
 
             // Expanded can be around one child of a Row or a Column
             // (there can be one or more children of those layouts).
@@ -406,7 +406,7 @@ class _ChartsDash extends State<ChartsDash> {
                 // this stretch carries | expansion to <--> Expanded children
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
-                   Text('>>>'),
+                  // Text('>>>'),
                   // LineChart is CustomPaint:
                   // A widget that provides a canvas on which to draw
                   // during the paint phase.
@@ -420,16 +420,16 @@ class _ChartsDash extends State<ChartsDash> {
                   // new Text('<<<<<<<<<<<'),   // skiped (shows 3 labels, legend present)
                   // new Text('<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'), // skiped (shows 2 labels, legend present but text vertical)
                   // new Text('<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<'),// labels do overlap, legend NOT present
-                   Text('<<<<<<'), // labels do overlap, legend NOT present
+                   //Text('<<<<<<'), // labels do overlap, legend NOT present
                 ],
               ),
             ),
 
-             Text('^^^^^^:'),
-             RaisedButton(
-              color: Colors.green,
-              onPressed: _chartStateChanger,
-            ),
+            // Text('^^^^^^:'),
+            //  RaisedButton(
+            //   color: Colors.green,
+            //   onPressed: _chartStateChanger,
+            // ),
           ],
         ),
       );
