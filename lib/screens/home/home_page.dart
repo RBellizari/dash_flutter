@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_dashboard/screens/appbar/appbar_page.dart';
 
 class HomePage extends StatefulWidget {
   final String title;
@@ -11,27 +12,9 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
-     appBar: AppBar(
-          title: Text(widget.title),
-        ),
-    body: Container(
-      decoration:
-          BoxDecoration(borderRadius: BorderRadius.circular(7), boxShadow: [
-        BoxShadow(color: Colors.black26, blurRadius: 4),
-      ]),
-      child: Row(
-        children: <Widget>[
-          Expanded(
-            flex: 3,
-            child: Text('teste'),
-          ),
-          Expanded(
-            flex: 7,
-            child: Text('test1'
-               ),
-          ),
-        ],
-      ),
-    ));
+    body: 
+    Container(
+      child: AppBarDash(),
+));
   }
 }
