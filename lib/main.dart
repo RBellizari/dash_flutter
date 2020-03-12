@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
     
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Troco.Tech',
+      title: 'Troco.Tech1',
       theme: ThemeData.dark(),
       home: HomePage(),
     );
