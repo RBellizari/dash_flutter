@@ -8,7 +8,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Troco.Tech',
       theme: ThemeData.dark(),
       home: MyHomePage(title: 'Troco.Tech - Dashboard'),
     );
@@ -86,4 +86,34 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
     );
   }
+
+
+  
 }
+
+ @override
+  Widget build(BuildContext context) {
+    return Material(
+      child: Stack(
+        children: <Widget>[
+          Column(
+            children: <Widget>[
+              Expanded(child: Container(color: Color(0xFF009688))),
+              Expanded(flex: 6, child: Container(color: Color(0xFFdfdfdf))),
+            ],
+          ),
+          Align(
+            alignment: Alignment.center,
+            child: ConstrainedBox(
+              constraints: BoxConstraints(maxWidth: 1400, maxHeight: 920),
+              child: Text('teste2'),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+
+
+
