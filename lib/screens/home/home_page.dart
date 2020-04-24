@@ -153,7 +153,7 @@ class _HomePageState extends State<HomePage> {
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(5)),
                               ),
-                              child: ChartsDash(),
+                              child: Chart(),
                             ),
                           ),
                           Expanded(
