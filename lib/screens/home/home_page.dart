@@ -142,7 +142,7 @@ class _HomePageState extends State<HomePage> {
                         padding: EdgeInsets.all(10),
                         child: Row(children: <Widget>[
                           Expanded(
-                            flex: 3,
+                            flex: 4,
                             child: Container(
                               margin: EdgeInsets.all(10),
                               height: 200,
@@ -156,7 +156,7 @@ class _HomePageState extends State<HomePage> {
                             ),
                           ),
                           Expanded(
-                            flex: 3,
+                            flex: 4,
                             child: Container(
                               margin: EdgeInsets.all(10),
                               height: 200,
@@ -170,21 +170,7 @@ class _HomePageState extends State<HomePage> {
                             ),
                           ),
                           Expanded(
-                            flex: 3,
-                            child: Container(
-                              margin: EdgeInsets.all(10),
-                              height: 200,
-                              decoration: BoxDecoration(
-                                color: Colors.yellow,
-                                border:
-                                    Border.all(color: Colors.black, width: 1),
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(5)),
-                              ),
-                            ),
-                          ),
-                          Expanded(
-                            flex: 3,
+                            flex: 4,
                             child: Container(
                               margin: EdgeInsets.all(10),
                               height: 200,
@@ -205,7 +191,7 @@ class _HomePageState extends State<HomePage> {
                         padding: EdgeInsets.all(10),
                         child: Row(children: <Widget>[
                           Expanded(
-                            flex: 3,
+                            flex: 9,
                             child: Container(
                               margin: EdgeInsets.all(10),
                               height: 200,
@@ -232,34 +218,7 @@ class _HomePageState extends State<HomePage> {
                               ),
                             ),
                           ),
-                          Expanded(
-                            flex: 3,
-                            child: Container(
-                              margin: EdgeInsets.all(10),
-                              height: 200,
-                              decoration: BoxDecoration(
-                                color: Colors.yellow,
-                                border:
-                                    Border.all(color: Colors.black, width: 1),
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(5)),
-                              ),
-                            ),
-                          ),
-                          Expanded(
-                            flex: 3,
-                            child: Container(
-                              margin: EdgeInsets.all(10),
-                              height: 200,
-                              decoration: BoxDecoration(
-                                color: Colors.yellow,
-                                border:
-                                    Border.all(color: Colors.black, width: 1),
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(5)),
-                              ),
-                            ),
-                          ),
+                          
                         ]),
                       ),
 
@@ -268,7 +227,7 @@ class _HomePageState extends State<HomePage> {
                         padding: EdgeInsets.all(10),
                         child: Row(children: <Widget>[
                           Expanded(
-                            flex: 3,
+                            flex: 6,
                             child: Container(
                               margin: EdgeInsets.all(10),
                               height: 200,
@@ -282,7 +241,7 @@ class _HomePageState extends State<HomePage> {
                             ),
                           ),
                           Expanded(
-                            flex: 3,
+                            flex: 6,
                             child: Container(
                               margin: EdgeInsets.all(10),
                               height: 200,
@@ -295,34 +254,7 @@ class _HomePageState extends State<HomePage> {
                               ),
                             ),
                           ),
-                          Expanded(
-                            flex: 3,
-                            child: Container(
-                              margin: EdgeInsets.all(10),
-                              height: 200,
-                              decoration: BoxDecoration(
-                                color: Colors.yellow,
-                                border:
-                                    Border.all(color: Colors.black, width: 1),
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(5)),
-                              ),
-                            ),
-                          ),
-                          Expanded(
-                            flex: 3,
-                            child: Container(
-                              margin: EdgeInsets.all(10),
-                              height: 200,
-                              decoration: BoxDecoration(
-                                color: Colors.yellow,
-                                border:
-                                    Border.all(color: Colors.black, width: 1),
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(5)),
-                              ),
-                            ),
-                          ),
+                          
                         ]),
                       ),
 
@@ -331,7 +263,7 @@ class _HomePageState extends State<HomePage> {
                         padding: EdgeInsets.all(10),
                         child: Row(children: <Widget>[
                           Expanded(
-                            flex: 3,
+                            flex: 6,
                             child: Container(
                               margin: EdgeInsets.all(10),
                               height: 200,
@@ -345,7 +277,7 @@ class _HomePageState extends State<HomePage> {
                             ),
                           ),
                           Expanded(
-                            flex: 3,
+                            flex: 6,
                             child: Container(
                               margin: EdgeInsets.all(10),
                               height: 200,
@@ -358,34 +290,7 @@ class _HomePageState extends State<HomePage> {
                               ),
                             ),
                           ),
-                          Expanded(
-                            flex: 3,
-                            child: Container(
-                              margin: EdgeInsets.all(10),
-                              height: 200,
-                              decoration: BoxDecoration(
-                                color: Colors.yellow,
-                                border:
-                                    Border.all(color: Colors.black, width: 1),
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(5)),
-                              ),
-                            ),
-                          ),
-                          Expanded(
-                            flex: 3,
-                            child: Container(
-                              margin: EdgeInsets.all(10),
-                              height: 200,
-                              decoration: BoxDecoration(
-                                color: Colors.yellow,
-                                border:
-                                    Border.all(color: Colors.black, width: 1),
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(5)),
-                              ),
-                            ),
-                          ),
+                          
                         ]),
                       ),
                     ]),),
