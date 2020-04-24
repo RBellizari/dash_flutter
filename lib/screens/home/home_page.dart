@@ -15,31 +15,20 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         body: Container(
-      child: Column(
-        children: <Widget>[
-          Container(
-            child: AppBarDash(),
+          child: Row(
+            children: <Widget>[
+              Expanded(
+                flex:7,
+                child:
+                Container(
+                  color: Colors.green,
+                )
+              )
+            ],
           ),
-          SizedBox(height: 50.0),
-          Row(
-        children: [
-          Expanded(
-            flex: 7,
-            child: Container(
-              color: Colors.green,
-            ),
-          ),
-          Expanded(
-            flex: 3,
-            child: Container(
-              color: Colors.yellow,
-            ),
-          ),
-        ],
-      ),
-        ],
+      
       ),
       
-    ));
+    );
   }
 }
