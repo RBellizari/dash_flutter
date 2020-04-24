@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
     
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Dashboard - Recebiveis',
+      title: 'Dashboard - Recebiveis1',
       theme: ThemeData.light(),
       home: HomePage(),
     );
