@@ -66,13 +66,18 @@ class _HomePageState extends State<HomePage> {
             Expanded(
               flex: 8,
               child: Container(
+                width: double.infinity,
                 color: Colors.yellow,
-                child: Container(
-                  height: 100,
-                  width: 100,
-                  color:Colors.red,
-                child: Text("teste"),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children:<Widget>[
+                    FlutterLogo(size: 100, colors: Colors.red,),
+                    FlutterLogo(size: 100, colors: Colors.purple,),
+                    FlutterLogo(size: 100, colors: Colors.green,),
+                    FlutterLogo(size: 100, colors: Colors.blue,),
+                  ]
                 ),
+                
               ),
             ),
             Expanded(
