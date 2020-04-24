@@ -67,36 +67,12 @@ class _HomePageState extends State<HomePage> {
               flex: 8,
               child: Container(
                 color: Colors.yellow,
-                child: Row(children: <Widget>[
-                  Expanded(
-                      flex: 3,
-                      child: Container(
-                        height: 100,
-                        color: Colors.red,
-                      )
-                      ),
-                      Expanded(
-                      flex: 3,
-                      child: Container(
-                        color: Colors.red,
-                         height: 100,
-                      )
-                      ),
-                      Expanded(
-                      flex: 3,
-                      child: Container(
-                        color: Colors.red, 
-                        height: 100,
-                      )
-                      ),
-                      Expanded(
-                      flex: 3,
-                      child: Container(
-                        color: Colors.red,
-                         height: 100,
-                      )
-                      )
-                ]),
+                child: Container(
+                  height: 100,
+                  width: 100,
+                  color:Colors.red,
+                
+                ),
               ),
             ),
             Expanded(
