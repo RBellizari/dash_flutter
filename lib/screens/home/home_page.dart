@@ -37,7 +37,7 @@ class _HomePageState extends State<HomePage> {
             ),
             Container(
               child:
-              Row(children: <Widget>[
+              Column(children: <Widget>[
                 Text("Teste"),
               ],)
             )
