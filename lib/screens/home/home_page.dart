@@ -74,6 +74,7 @@ class _HomePageState extends State<HomePage> {
 
                       //Operações
                       Container(
+                        padding: EdgeInsets.all(10.0),
                         child: Row(children: <Widget>[
                           Expanded(
                             child: Container(
@@ -124,6 +125,7 @@ class _HomePageState extends State<HomePage> {
 
                       //Graficos
                       Container(
+                        padding: EdgeInsets.all(10.0),
                         child: Row(children: <Widget>[
                           Expanded(
                             child: FlutterLogo(
@@ -149,6 +151,7 @@ class _HomePageState extends State<HomePage> {
 
                       //Enquadramento
                       Container(
+                        padding: EdgeInsets.all(10.0),
                         child: Row(children: <Widget>[
                           Expanded(
                             child: FlutterLogo(
@@ -168,6 +171,7 @@ class _HomePageState extends State<HomePage> {
 
                       //Prazo
                       Container(
+                        padding: EdgeInsets.all(10.0),
                         child: Row(children: <Widget>[
                           Expanded(
                             child: FlutterLogo(
@@ -187,6 +191,7 @@ class _HomePageState extends State<HomePage> {
 
                       //Tarefas
                       Container(
+                        padding: EdgeInsets.all(10.0),
                         child: Row(children: <Widget>[
                           Expanded(
                             child: FlutterLogo(
