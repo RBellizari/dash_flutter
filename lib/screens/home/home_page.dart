@@ -35,6 +35,12 @@ class _HomePageState extends State<HomePage> {
                 color: Colors.purple,
               ),
             ),
+            Container(
+              child:
+              Row(children: <Widget>[
+                Text("Teste"),
+              ],)
+            )
           ],
         ),
       ),
