@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Troco.Tech1',
-      theme: ThemeData.dark(),
+      theme: ThemeData.light(),
       home: HomePage(),
     );
   }
