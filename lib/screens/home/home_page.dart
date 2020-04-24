@@ -76,28 +76,48 @@ class _HomePageState extends State<HomePage> {
                       Container(
                         child: Row(children: <Widget>[
                           Expanded(
-                            child: FlutterLogo(
-                              size: 100,
-                              colors: Colors.red,
-                            ),
+                            child: Container(
+      height: 200,
+      width: 200,
+      decoration: BoxDecoration(
+        color: Colors.yellow,
+        border: Border.all(color: Colors.black, width: 3),
+        borderRadius: BorderRadius.all(Radius.circular(18)),
+      ),
+    ),
                           ),
                           Expanded(
-                            child: FlutterLogo(
-                              size: 100,
-                              colors: Colors.purple,
-                            ),
+                            child: Container(
+      height: 200,
+      width: 200,
+      decoration: BoxDecoration(
+        color: Colors.yellow,
+        border: Border.all(color: Colors.black, width: 3),
+        borderRadius: BorderRadius.all(Radius.circular(18)),
+      ),
+    ),
                           ),
                           Expanded(
-                            child: FlutterLogo(
-                              size: 100,
-                              colors: Colors.green,
-                            ),
+                            child:Container(
+      height: 200,
+      width: 200,
+      decoration: BoxDecoration(
+        color: Colors.yellow,
+        border: Border.all(color: Colors.black, width: 3),
+        borderRadius: BorderRadius.all(Radius.circular(18)),
+      ),
+    ),
                           ),
                           Expanded(
-                            child: FlutterLogo(
-                              size: 100,
-                              colors: Colors.blue,
-                            ),
+                            child: Container(
+      height: 200,
+      width: 200,
+      decoration: BoxDecoration(
+        color: Colors.yellow,
+        border: Border.all(color: Colors.black, width: 3),
+        borderRadius: BorderRadius.all(Radius.circular(18)),
+      ),
+    ),
                           ),
                         ]),
                       ),
