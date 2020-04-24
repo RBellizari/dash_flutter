@@ -74,11 +74,12 @@ class _HomePageState extends State<HomePage> {
 
                       //Operações
                       Container(
-                        margin: EdgeInsets.all(10),
+                        
                         child: Row(children: <Widget>[
                           Expanded(
                             flex: 3,
                             child: Container(
+                              margin: EdgeInsets.all(10),
       height: 200,
       decoration: BoxDecoration(
         color: Colors.yellow,
@@ -90,6 +91,7 @@ class _HomePageState extends State<HomePage> {
                           Expanded(
                              flex: 3,
                             child: Container(
+                              margin: EdgeInsets.all(10),
       height: 200,
       decoration: BoxDecoration(
         color: Colors.yellow,
@@ -101,6 +103,7 @@ class _HomePageState extends State<HomePage> {
                           Expanded(
                              flex: 3,
                             child:Container(
+                              margin: EdgeInsets.all(10),
       height: 200,
       decoration: BoxDecoration(
         color: Colors.yellow,
@@ -112,6 +115,7 @@ class _HomePageState extends State<HomePage> {
                           Expanded(
                              flex: 3,
                             child: Container(
+                              margin: EdgeInsets.all(10),
       height: 200,
       decoration: BoxDecoration(
         color: Colors.yellow,
