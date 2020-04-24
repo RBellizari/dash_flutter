@@ -73,7 +73,7 @@ class _HomePageState extends State<HomePage> {
                     children: <Widget>[
 
                       //Operações
-                      Container(
+                      Padding(
                         padding: EdgeInsets.all(10.0),
                         child: Row(children: <Widget>[
                           Expanded(
@@ -124,7 +124,7 @@ class _HomePageState extends State<HomePage> {
                       ),
 
                       //Graficos
-                      Container(
+                      Padding(
                         padding: EdgeInsets.all(10.0),
                         child: Row(children: <Widget>[
                           Expanded(
