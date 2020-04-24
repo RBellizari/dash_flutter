@@ -75,10 +75,11 @@ class _HomePageState extends State<HomePage> {
                       //Operações
                       Container(
                         padding: EdgeInsets.all(10.0),
-                        child: Row(children: <Widget>[
-                          Expanded(
-                            flex: 3,
-                            child: Container(
+                        child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: <Widget>[
+                          Container(
+                            width: 200,
       height: 200,
       decoration: BoxDecoration(
         color: Colors.yellow,
@@ -86,10 +87,9 @@ class _HomePageState extends State<HomePage> {
         borderRadius: BorderRadius.all(Radius.circular(5)),
       ),
     ),
-                          ),
-                          Expanded(
-                             flex: 3,
-                            child: Container(
+                        
+                         Container(
+                           width: 200,
       height: 200,
       decoration: BoxDecoration(
         color: Colors.yellow,
@@ -97,10 +97,9 @@ class _HomePageState extends State<HomePage> {
         borderRadius: BorderRadius.all(Radius.circular(5)),
       ),
     ),
-                          ),
-                          Expanded(
-                             flex: 3,
-                            child:Container(
+                         
+                         Container(
+                           width: 200,
       height: 200,
       decoration: BoxDecoration(
         color: Colors.yellow,
@@ -108,10 +107,9 @@ class _HomePageState extends State<HomePage> {
         borderRadius: BorderRadius.all(Radius.circular(5)),
       ),
     ),
-                          ),
-                          Expanded(
-                             flex: 3,
-                            child: Container(
+                         
+                       Container(
+                         width: 200,
       height: 200,
       decoration: BoxDecoration(
         color: Colors.yellow,
@@ -119,7 +117,7 @@ class _HomePageState extends State<HomePage> {
         borderRadius: BorderRadius.all(Radius.circular(5)),
       ),
     ),
-                          ),
+                        
                         ]),
                       ),
 
