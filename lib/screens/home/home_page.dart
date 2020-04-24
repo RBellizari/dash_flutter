@@ -67,7 +67,7 @@ class _HomePageState extends State<HomePage> {
               flex: 8,
               child: Container(
                 width: double.infinity,
-                color: Colors.yellow,
+                color: Colors.white,
                 child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: <Widget>[
@@ -82,8 +82,8 @@ class _HomePageState extends State<HomePage> {
       height: 200,
       decoration: BoxDecoration(
         color: Colors.yellow,
-        border: Border.all(color: Colors.black, width: 3),
-        borderRadius: BorderRadius.all(Radius.circular(18)),
+        border: Border.all(color: Colors.black, width: 1),
+        borderRadius: BorderRadius.all(Radius.circular(5)),
       ),
     ),
                           ),
@@ -93,8 +93,8 @@ class _HomePageState extends State<HomePage> {
       height: 200,
       decoration: BoxDecoration(
         color: Colors.yellow,
-        border: Border.all(color: Colors.black, width: 3),
-        borderRadius: BorderRadius.all(Radius.circular(18)),
+        border: Border.all(color: Colors.black, width: 1),
+        borderRadius: BorderRadius.all(Radius.circular(5)),
       ),
     ),
                           ),
@@ -104,8 +104,8 @@ class _HomePageState extends State<HomePage> {
       height: 200,
       decoration: BoxDecoration(
         color: Colors.yellow,
-        border: Border.all(color: Colors.black, width: 3),
-        borderRadius: BorderRadius.all(Radius.circular(18)),
+        border: Border.all(color: Colors.black, width: 1),
+        borderRadius: BorderRadius.all(Radius.circular(5)),
       ),
     ),
                           ),
@@ -115,8 +115,8 @@ class _HomePageState extends State<HomePage> {
       height: 200,
       decoration: BoxDecoration(
         color: Colors.yellow,
-        border: Border.all(color: Colors.black, width: 3),
-        borderRadius: BorderRadius.all(Radius.circular(18)),
+        border: Border.all(color: Colors.black, width: 1),
+        borderRadius: BorderRadius.all(Radius.circular(5)),
       ),
     ),
                           ),
