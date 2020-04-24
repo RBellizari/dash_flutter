@@ -13,7 +13,14 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Dashboard - Recebiveis1',
       theme: ThemeData.light(),
-      home: HomePage(),
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("DashBoard"),
+        ),
+        body: HomePage(),
+      )
+      
+      
     );
   }
 }
