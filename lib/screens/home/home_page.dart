@@ -24,9 +24,15 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.green,
                 )),
             Expanded(
-              flex: 8,
+              flex: 6,
               child: Container(
                 color: Colors.yellow,
+              ),
+            ),
+            Expanded(
+              flex: 2,
+              child: Container(
+                color: Colors.purple,
               ),
             ),
           ],
