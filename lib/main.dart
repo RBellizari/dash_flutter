@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
     
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Troco.Tech1',
+      title: 'Dashboard - Recebiveis',
       theme: ThemeData.light(),
       home: HomePage(),
     );

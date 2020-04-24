@@ -4,7 +4,7 @@ import 'package:flutter_dashboard/screens/charts/charts_page.dart';
 
 class HomePage extends StatefulWidget {
   final String title;
-  const HomePage({Key key, this.title = "Troco.Tech - Dashboard"})
+  const HomePage({Key key, this.title = "Dashboard - Recebiveis"})
       : super(key: key);
 
   @override
@@ -21,27 +21,6 @@ class _HomePageState extends State<HomePage> {
             child: AppBarDash(),
           ),
           SizedBox(height: 50.0),
-          
-          Row(
-children: <Widget>[
-  
-],
-          ),
-          Expanded(
-           
-              child: Container(
-            width: 500,
-            height: 100,
-            child: ChartsDash(),
-          )),
-           Expanded(
-           
-              child: Container(
-            width: 500,
-            height: 100,
-            child: ChartsDash(),
-          )),
-          SizedBox(height: 500.0),
         ],
       ),
     ));
