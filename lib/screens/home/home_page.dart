@@ -71,7 +71,7 @@ class _HomePageState extends State<HomePage> {
                   height: 100,
                   width: 100,
                   color:Colors.red,
-                
+                child: Text("teste"),
                 ),
               ),
             ),
