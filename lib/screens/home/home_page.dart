@@ -191,7 +191,7 @@ class _HomePageState extends State<HomePage> {
                         padding: EdgeInsets.all(10),
                         child: Row(children: <Widget>[
                           Expanded(
-                            flex: 9,
+                            flex: 8,
                             child: Container(
                               margin: EdgeInsets.all(10),
                               height: 200,
@@ -205,7 +205,7 @@ class _HomePageState extends State<HomePage> {
                             ),
                           ),
                           Expanded(
-                            flex: 3,
+                            flex: 4,
                             child: Container(
                               margin: EdgeInsets.all(10),
                               height: 200,
