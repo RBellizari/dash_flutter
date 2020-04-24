@@ -71,54 +71,57 @@ class _HomePageState extends State<HomePage> {
                 child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: <Widget>[
-
                       //Operações
                       Container(
                         padding: EdgeInsets.all(10.0),
                         child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: <Widget>[
-                          Container(
-                            width: 200,
-      height: 200,
-      decoration: BoxDecoration(
-        color: Colors.yellow,
-        border: Border.all(color: Colors.black, width: 1),
-        borderRadius: BorderRadius.all(Radius.circular(5)),
-      ),
-    ),
-                        
-                         Container(
-                           width: 200,
-      height: 200,
-      decoration: BoxDecoration(
-        color: Colors.yellow,
-        border: Border.all(color: Colors.black, width: 1),
-        borderRadius: BorderRadius.all(Radius.circular(5)),
-      ),
-    ),
-                         
-                         Container(
-                           width: 200,
-      height: 200,
-      decoration: BoxDecoration(
-        color: Colors.yellow,
-        border: Border.all(color: Colors.black, width: 1),
-        borderRadius: BorderRadius.all(Radius.circular(5)),
-      ),
-    ),
-                         
-                       Container(
-                         width: 200,
-      height: 200,
-      decoration: BoxDecoration(
-        color: Colors.yellow,
-        border: Border.all(color: Colors.black, width: 1),
-        borderRadius: BorderRadius.all(Radius.circular(5)),
-      ),
-    ),
-                        
-                        ]),
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: <Widget>[
+                              Container(
+                                
+                                height: 200,
+                                decoration: BoxDecoration(
+                                  color: Colors.yellow,
+                                  border:
+                                      Border.all(color: Colors.black, width: 1),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(5)),
+                                ),
+                              ),
+                              Container(
+                               
+                                height: 200,
+                                decoration: BoxDecoration(
+                                  color: Colors.yellow,
+                                  border:
+                                      Border.all(color: Colors.black, width: 1),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(5)),
+                                ),
+                              ),
+                              Container(
+                              
+                                height: 200,
+                                decoration: BoxDecoration(
+                                  color: Colors.yellow,
+                                  border:
+                                      Border.all(color: Colors.black, width: 1),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(5)),
+                                ),
+                              ),
+                              Container(
+                              
+                                height: 200,
+                                decoration: BoxDecoration(
+                                  color: Colors.yellow,
+                                  border:
+                                      Border.all(color: Colors.black, width: 1),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(5)),
+                                ),
+                              ),
+                            ]),
                       ),
 
                       //Graficos
@@ -143,7 +146,6 @@ class _HomePageState extends State<HomePage> {
                               colors: Colors.green,
                             ),
                           ),
-                         
                         ]),
                       ),
 
@@ -163,7 +165,6 @@ class _HomePageState extends State<HomePage> {
                               colors: Colors.purple,
                             ),
                           ),
-                          
                         ]),
                       ),
 
@@ -183,13 +184,11 @@ class _HomePageState extends State<HomePage> {
                               colors: Colors.purple,
                             ),
                           ),
-                         
                         ]),
                       ),
 
                       //Tarefas
                       Container(
-                        
                         child: Row(children: <Widget>[
                           Expanded(
                             child: FlutterLogo(
@@ -203,7 +202,6 @@ class _HomePageState extends State<HomePage> {
                               colors: Colors.purple,
                             ),
                           ),
-                          
                         ]),
                       ),
                     ]),
