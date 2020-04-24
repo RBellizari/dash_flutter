@@ -69,33 +69,149 @@ class _HomePageState extends State<HomePage> {
                 width: double.infinity,
                 color: Colors.yellow,
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.stretch,
-                  children:<Widget>[
-                    Container(
-                      child: Row(
-                        children:<Widget>[
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: <Widget>[
+                      Container(
+                        child: Row(children: <Widget>[
                           Expanded(
-                            child: FlutterLogo(size: 100, colors: Colors.red,),
+                            child: FlutterLogo(
+                              size: 100,
+                              colors: Colors.red,
+                            ),
                           ),
-                           Expanded(
-                            child: FlutterLogo(size: 100, colors: Colors.purple,),
+                          Expanded(
+                            child: FlutterLogo(
+                              size: 100,
+                              colors: Colors.purple,
+                            ),
                           ),
-                           Expanded(
-                            child: FlutterLogo(size: 100, colors: Colors.green,),
+                          Expanded(
+                            child: FlutterLogo(
+                              size: 100,
+                              colors: Colors.green,
+                            ),
                           ),
-                           Expanded(
-                            child: FlutterLogo(size: 100, colors: Colors.blue,),
+                          Expanded(
+                            child: FlutterLogo(
+                              size: 100,
+                              colors: Colors.blue,
+                            ),
                           ),
-                        ]
+                        ]),
                       ),
-                    ),
-                    FlutterLogo(size: 100, colors: Colors.red,),
-                    FlutterLogo(size: 100, colors: Colors.purple,),
-                    FlutterLogo(size: 100, colors: Colors.green,),
-                    FlutterLogo(size: 100, colors: Colors.blue,),
-                  ]
-                ),
-                
+                      Container(
+                        child: Row(children: <Widget>[
+                          Expanded(
+                            child: FlutterLogo(
+                              size: 100,
+                              colors: Colors.red,
+                            ),
+                          ),
+                          Expanded(
+                            child: FlutterLogo(
+                              size: 100,
+                              colors: Colors.purple,
+                            ),
+                          ),
+                          Expanded(
+                            child: FlutterLogo(
+                              size: 100,
+                              colors: Colors.green,
+                            ),
+                          ),
+                          Expanded(
+                            child: FlutterLogo(
+                              size: 100,
+                              colors: Colors.blue,
+                            ),
+                          ),
+                        ]),
+                      ),
+                      Container(
+                        child: Row(children: <Widget>[
+                          Expanded(
+                            child: FlutterLogo(
+                              size: 100,
+                              colors: Colors.red,
+                            ),
+                          ),
+                          Expanded(
+                            child: FlutterLogo(
+                              size: 100,
+                              colors: Colors.purple,
+                            ),
+                          ),
+                          Expanded(
+                            child: FlutterLogo(
+                              size: 100,
+                              colors: Colors.green,
+                            ),
+                          ),
+                          Expanded(
+                            child: FlutterLogo(
+                              size: 100,
+                              colors: Colors.blue,
+                            ),
+                          ),
+                        ]),
+                      ),
+                      Container(
+                        child: Row(children: <Widget>[
+                          Expanded(
+                            child: FlutterLogo(
+                              size: 100,
+                              colors: Colors.red,
+                            ),
+                          ),
+                          Expanded(
+                            child: FlutterLogo(
+                              size: 100,
+                              colors: Colors.purple,
+                            ),
+                          ),
+                          Expanded(
+                            child: FlutterLogo(
+                              size: 100,
+                              colors: Colors.green,
+                            ),
+                          ),
+                          Expanded(
+                            child: FlutterLogo(
+                              size: 100,
+                              colors: Colors.blue,
+                            ),
+                          ),
+                        ]),
+                      ),
+                      Container(
+                        child: Row(children: <Widget>[
+                          Expanded(
+                            child: FlutterLogo(
+                              size: 100,
+                              colors: Colors.red,
+                            ),
+                          ),
+                          Expanded(
+                            child: FlutterLogo(
+                              size: 100,
+                              colors: Colors.purple,
+                            ),
+                          ),
+                          Expanded(
+                            child: FlutterLogo(
+                              size: 100,
+                              colors: Colors.green,
+                            ),
+                          ),
+                          Expanded(
+                            child: FlutterLogo(
+                              size: 100,
+                              colors: Colors.blue,
+                            ),
+                          ),
+                        ]),
+                      ),
+                    ]),
               ),
             ),
             Expanded(
