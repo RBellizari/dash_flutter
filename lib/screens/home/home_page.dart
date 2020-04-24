@@ -71,6 +71,8 @@ class _HomePageState extends State<HomePage> {
                 child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: <Widget>[
+
+                      //Operações
                       Container(
                         child: Row(children: <Widget>[
                           Expanded(
@@ -99,6 +101,8 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ]),
                       ),
+
+                      //Graficos
                       Container(
                         child: Row(children: <Widget>[
                           Expanded(
@@ -119,14 +123,11 @@ class _HomePageState extends State<HomePage> {
                               colors: Colors.green,
                             ),
                           ),
-                          Expanded(
-                            child: FlutterLogo(
-                              size: 100,
-                              colors: Colors.blue,
-                            ),
-                          ),
+                         
                         ]),
                       ),
+
+                      //Enquadramento
                       Container(
                         child: Row(children: <Widget>[
                           Expanded(
@@ -141,20 +142,11 @@ class _HomePageState extends State<HomePage> {
                               colors: Colors.purple,
                             ),
                           ),
-                          Expanded(
-                            child: FlutterLogo(
-                              size: 100,
-                              colors: Colors.green,
-                            ),
-                          ),
-                          Expanded(
-                            child: FlutterLogo(
-                              size: 100,
-                              colors: Colors.blue,
-                            ),
-                          ),
+                          
                         ]),
                       ),
+
+                      //Prazo
                       Container(
                         child: Row(children: <Widget>[
                           Expanded(
@@ -169,20 +161,11 @@ class _HomePageState extends State<HomePage> {
                               colors: Colors.purple,
                             ),
                           ),
-                          Expanded(
-                            child: FlutterLogo(
-                              size: 100,
-                              colors: Colors.green,
-                            ),
-                          ),
-                          Expanded(
-                            child: FlutterLogo(
-                              size: 100,
-                              colors: Colors.blue,
-                            ),
-                          ),
+                         
                         ]),
                       ),
+
+                      //Tarefas
                       Container(
                         child: Row(children: <Widget>[
                           Expanded(
@@ -197,18 +180,7 @@ class _HomePageState extends State<HomePage> {
                               colors: Colors.purple,
                             ),
                           ),
-                          Expanded(
-                            child: FlutterLogo(
-                              size: 100,
-                              colors: Colors.green,
-                            ),
-                          ),
-                          Expanded(
-                            child: FlutterLogo(
-                              size: 100,
-                              colors: Colors.blue,
-                            ),
-                          ),
+                          
                         ]),
                       ),
                     ]),
