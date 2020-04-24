@@ -73,13 +73,13 @@ class _HomePageState extends State<HomePage> {
                     children: <Widget>[
 
                       //Operações
-                      Padding(
+                      Container(
                         padding: EdgeInsets.all(10.0),
                         child: Row(children: <Widget>[
                           Expanded(
+                            flex: 3,
                             child: Container(
       height: 200,
-      width: 200,
       decoration: BoxDecoration(
         color: Colors.yellow,
         border: Border.all(color: Colors.black, width: 3),
@@ -88,9 +88,9 @@ class _HomePageState extends State<HomePage> {
     ),
                           ),
                           Expanded(
+                             flex: 3,
                             child: Container(
       height: 200,
-      width: 200,
       decoration: BoxDecoration(
         color: Colors.yellow,
         border: Border.all(color: Colors.black, width: 3),
@@ -99,9 +99,9 @@ class _HomePageState extends State<HomePage> {
     ),
                           ),
                           Expanded(
+                             flex: 3,
                             child:Container(
       height: 200,
-      width: 200,
       decoration: BoxDecoration(
         color: Colors.yellow,
         border: Border.all(color: Colors.black, width: 3),
@@ -110,9 +110,9 @@ class _HomePageState extends State<HomePage> {
     ),
                           ),
                           Expanded(
+                             flex: 3,
                             child: Container(
       height: 200,
-      width: 200,
       decoration: BoxDecoration(
         color: Colors.yellow,
         border: Border.all(color: Colors.black, width: 3),
@@ -124,7 +124,7 @@ class _HomePageState extends State<HomePage> {
                       ),
 
                       //Graficos
-                      Padding(
+                      Container(
                         padding: EdgeInsets.all(10.0),
                         child: Row(children: <Widget>[
                           Expanded(
@@ -191,7 +191,7 @@ class _HomePageState extends State<HomePage> {
 
                       //Tarefas
                       Container(
-                        padding: EdgeInsets.all(10.0),
+                        
                         child: Row(children: <Widget>[
                           Expanded(
                             child: FlutterLogo(
