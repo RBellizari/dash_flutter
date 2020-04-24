@@ -66,9 +66,12 @@ class _HomePageState extends State<HomePage> {
             Expanded(
               flex: 8,
               child: Container(
+               
                 width: double.infinity,
                 color: Colors.white,
-                child: Column(
+                child: 
+                 SingleChildScrollView(
+                 child: Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: <Widget>[
                       //Operações
@@ -385,7 +388,7 @@ class _HomePageState extends State<HomePage> {
                           ),
                         ]),
                       ),
-                    ]),
+                    ]),),
               ),
             ),
             Expanded(
