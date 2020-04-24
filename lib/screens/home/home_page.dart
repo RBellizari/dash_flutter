@@ -14,21 +14,23 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
-        body: Container(
-          child: Row(
-            children: <Widget>[
-              Expanded(
-                flex:7,
-                child:
-                Container(
+      body: Container(
+        child: Row(
+          children: <Widget>[
+            Expanded(
+                flex: 7,
+                child: Container(
                   color: Colors.green,
-                )
-              )
-            ],
-          ),
-      
+                )),
+            Expanded(
+              flex: 3,
+              child: Container(
+                color: Colors.yellow,
+              ),
+            ),
+          ],
+        ),
       ),
-      
     );
   }
 }
