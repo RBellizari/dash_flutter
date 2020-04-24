@@ -74,7 +74,7 @@ class _HomePageState extends State<HomePage> {
 
                       //Operações
                       Container(
-                        padding: EdgeInsets.all(10.0),
+                        margin: EdgeInsets.all(10),
                         child: Row(children: <Widget>[
                           Expanded(
                             flex: 3,
