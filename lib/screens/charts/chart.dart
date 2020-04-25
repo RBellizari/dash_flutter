@@ -15,7 +15,7 @@ class _DonutAutoLabelChartState extends State<DonutAutoLabelChart> {
       LinearSales(0, 100, Color(0xff3366cc)),
       LinearSales(1, 75, Color(0xff3366cc)),
       LinearSales(2, 25, Color(0xff3366cc)),
-      LinearSales(3, 5, Color(0xff3366cc)),
+      LinearSales (3, 5, Color(0xff3366cc)),
     ];
 
     return [
@@ -39,18 +39,7 @@ class _DonutAutoLabelChartState extends State<DonutAutoLabelChart> {
   @override
   Widget build(BuildContext context) {
     return charts.PieChart(seriesList,
-     behaviors: [
-                            new charts.DatumLegend(
-                              outsideJustification: charts.OutsideJustification.endDrawArea,
-                              horizontalFirst: false,
-                              desiredMaxRows: 2,
-                              cellPadding: new EdgeInsets.only(right: 4.0, bottom: 4.0),
-                              entryTextStyle: charts.TextStyleSpec(
-                                  color: charts.MaterialPalette.purple.shadeDefault,
-                                  fontFamily: 'Georgia',
-                                  fontSize: 11),
-                            )
-                          ],
+     
     
     
         defaultRenderer: charts.ArcRendererConfig(
