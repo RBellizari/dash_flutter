@@ -15,7 +15,7 @@ class _DonutAutoLabelChartState extends State<DonutAutoLabelChart> {
       LinearSales(0, 100, Color(0xff3366cc)),
       LinearSales(1, 75, Color(0xff3366cc)),
       LinearSales(2, 25, Color(0xff3366cc)),
-      LinearSales(3, 5, Color(0xff3366cc)),
+      
     ];
 
     return [
