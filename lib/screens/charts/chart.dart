@@ -39,8 +39,22 @@ class _DonutAutoLabelChartState extends State<DonutAutoLabelChart> {
   @override
   Widget build(BuildContext context) {
     return charts.PieChart(seriesList,
+     behaviors: [
+                            new charts.DatumLegend(
+                              outsideJustification: charts.OutsideJustification.endDrawArea,
+                              horizontalFirst: false,
+                              desiredMaxRows: 2,
+                              cellPadding: new EdgeInsets.only(right: 4.0, bottom: 4.0),
+                              entryTextStyle: charts.TextStyleSpec(
+                                  color: charts.MaterialPalette.purple.shadeDefault,
+                                  fontFamily: 'Georgia',
+                                  fontSize: 11),
+                            )
+                          ],
+    
+    
         defaultRenderer: charts.ArcRendererConfig(
-            arcWidth: 60, arcRendererDecorators: [charts.ArcLabelDecorator()]));
+            arcWidth: 100, arcRendererDecorators: [charts.ArcLabelDecorator()]));
   }
 
   /// Create one series with sample hard coded data.
