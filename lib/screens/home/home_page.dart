@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dashboard/screens/appbar/appbar_page.dart';
+import 'package:flutter_dashboard/screens/charts/chart_line.dart';
 import 'package:flutter_dashboard/screens/charts/charts_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -168,6 +169,7 @@ class _HomePageState extends State<HomePage> {
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(5)),
                               ),
+                              child: Chart02(),
                             ),
                           ),
                           Expanded(
