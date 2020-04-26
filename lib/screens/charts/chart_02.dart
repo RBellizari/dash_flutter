@@ -25,6 +25,20 @@ List<charts.Series> seriesList;
       
     ];
 
+     final desktopSalesData1 = [
+       OrdinalSales('Plano Empresário', 70,12,18),
+       OrdinalSales('Mutuário Final', 50, 10, 40),
+       OrdinalSales('Total', 90, 5, 5),
+      
+    ];
+
+     final desktopSalesData2 = [
+       OrdinalSales('Plano Empresário', 70,12,18),
+       OrdinalSales('Mutuário Final', 50, 10, 40),
+       OrdinalSales('Total', 90, 5, 5),
+      
+    ];
+
     
 
     
@@ -42,7 +56,7 @@ List<charts.Series> seriesList;
         domainFn: (OrdinalSales sales1, _) => sales1.year,
         measureFn: (OrdinalSales sales1, _) => sales1.sales,
         colorFn: (__, _) => charts.ColorUtil.fromDartColor(Color(0xffFC5154)),
-        data: desktopSalesData,
+        data: desktopSalesData1,
       ),
 
        charts.Series<OrdinalSales, String>(
@@ -50,7 +64,7 @@ List<charts.Series> seriesList;
         domainFn: (OrdinalSales sales2, _) => sales2.year,
         measureFn: (OrdinalSales sales2, _) => sales2.sales,
         colorFn: (__, _) => charts.ColorUtil.fromDartColor(Color(0xff38B2FC)),
-        data: desktopSalesData,
+        data: desktopSalesData2,
       ),
      
     ];
