@@ -149,12 +149,20 @@ class _HomePageState extends State<HomePage> {
                             child: Container(
                               margin: EdgeInsets.all(10),
                               height: 300,
+                            
                               decoration: BoxDecoration(
                                 color: Colors.white,
                                 border:
                                     Border.all(color: Colors.black, width: 1),
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(5)),
+                                    boxShadow: [
+                BoxShadow(
+                  blurRadius: 13.0,
+                  color: Colors.black.withOpacity(.5),
+                  offset: Offset(6.0, 7.0),
+                ),
+              ],
                               ),
                               child: DonutAutoLabelChart(),
                             ),
