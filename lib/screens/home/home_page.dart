@@ -217,15 +217,30 @@ class _HomePageState extends State<HomePage> {
                             Expanded(
                               flex: 8,
                               child: Container(
+                                 padding: EdgeInsets.all(10),
                                 margin: EdgeInsets.all(10),
-                                height: 200,
+                                height: 300,
                                 decoration: BoxDecoration(
-                                  color: Colors.yellow,
-                                  border:
-                                      Border.all(color: Colors.black, width: 1),
+                                  color: Colors.white,
                                   borderRadius:
                                       BorderRadius.all(Radius.circular(5)),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      blurRadius: 7.0,
+                                      color: Colors.grey.withOpacity(.2),
+                                      offset: Offset(5.0, 6.0),
+                                    ),
+                                  ],
                                 ),
+                                child: 
+                                Row(
+                                  children: <Widget>[
+                                    Expanded(
+                                      child: StackedBarChart(),
+                                    )
+                                  ]
+                                )
+                                
                               ),
                             ),
                             Expanded(
