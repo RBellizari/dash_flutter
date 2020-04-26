@@ -148,9 +148,9 @@ class _HomePageState extends State<HomePage> {
                             flex: 4,
                             child: Container(
                               margin: EdgeInsets.all(10),
-                              height: 200,
+                              height: 400,
                               decoration: BoxDecoration(
-                                color: Colors.yellow,
+                                color: Colors.white,
                                 border:
                                     Border.all(color: Colors.black, width: 1),
                                 borderRadius:
@@ -163,7 +163,7 @@ class _HomePageState extends State<HomePage> {
                             flex: 4,
                             child: Container(
                               margin: EdgeInsets.all(10),
-                              height: 200,
+                              height: 400,
                               decoration: BoxDecoration(
                                 color: Colors.yellow,
                                 border:
@@ -178,7 +178,7 @@ class _HomePageState extends State<HomePage> {
                             flex: 4,
                             child: Container(
                               margin: EdgeInsets.all(10),
-                              height: 200,
+                              height: 400,
                               decoration: BoxDecoration(
                                 color: Colors.yellow,
                                 border:
