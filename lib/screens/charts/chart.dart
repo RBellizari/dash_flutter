@@ -41,6 +41,8 @@ class _DonutAutoLabelChartState extends State<DonutAutoLabelChart> {
   @override
   Widget build(BuildContext context) {
     return charts.PieChart(seriesList,
+    animate: true,
+                              animationDuration: Duration(seconds: 5),
     behaviors: [new charts.DatumLegend()],
         defaultRenderer: charts.ArcRendererConfig(
             arcWidth: 40, arcRendererDecorators: [charts.ArcLabelDecorator()]));
