@@ -39,27 +39,27 @@ class _HomePageState extends State<HomePage> {
                       ),
                       ListTile(
                         leading: Icon(Icons.input),
-                        title: Text('Welcome'),
+                        title: Text('Operacional'),
                         onTap: () => {},
                       ),
                       ListTile(
                         leading: Icon(Icons.verified_user),
-                        title: Text('Profile'),
+                        title: Text('Estratégico'),
                         onTap: () => {Navigator.of(context).pop()},
                       ),
                       ListTile(
                         leading: Icon(Icons.settings),
-                        title: Text('Settings'),
+                        title: Text('Analítico'),
                         onTap: () => {Navigator.of(context).pop()},
                       ),
                       ListTile(
                         leading: Icon(Icons.border_color),
-                        title: Text('Feedback'),
+                        title: Text('Configurações'),
                         onTap: () => {Navigator.of(context).pop()},
                       ),
                       ListTile(
                         leading: Icon(Icons.exit_to_app),
-                        title: Text('Logout'),
+                        title: Text('Sair'),
                         onTap: () => {Navigator.of(context).pop()},
                       ),
                     ],
