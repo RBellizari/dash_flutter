@@ -19,22 +19,15 @@ List<charts.Series> seriesList;
 /// Create series list with multiple series
   static List<charts.Series<OrdinalSales, String>> _createSampleData() {
     final desktopSalesData = [
-       OrdinalSales('Plano Empresário', 5, 1),
-      
+       OrdinalSales('Plano Empresário', 5),
+       OrdinalSales('Mutuário Final', 25),
+       OrdinalSales('Total', 100),
       
     ];
 
-    final tableSalesData = [
-       OrdinalSales('Mutuário Final', 25, 10),
-      
-       
-    ];
+    
 
-    final mobileSalesData = [
-       OrdinalSales('Total', 10, 20),
-       
-      
-    ];
+    
 
     return [
       new charts.Series<OrdinalSales, String>(
@@ -43,18 +36,7 @@ List<charts.Series> seriesList;
         measureFn: (OrdinalSales sales, _) => sales.sales,
         data: desktopSalesData,
       ),
-      new charts.Series<OrdinalSales, String>(
-        id: 'Saldo em Atraso',
-        domainFn: (OrdinalSales sales1, _) => sales1.year,
-        measureFn: (OrdinalSales sales1, _) => sales1.sales1,
-        data: tableSalesData,
-      ),
-      new charts.Series<OrdinalSales, String>(
-        id: 'Saldo Devedor Total',
-        domainFn: (OrdinalSales sales, _) => sales.year,
-        measureFn: (OrdinalSales sales, _) => sales.sales,
-        data: mobileSalesData,
-      ),
+     
     ];
   }
 
@@ -80,7 +62,6 @@ List<charts.Series> seriesList;
 class OrdinalSales {
   final String year;
   final int sales;
-  final int sales1;
 
-  OrdinalSales(this.year, this.sales, this.sales1);
+  OrdinalSales(this.year, this.sales);
 }
