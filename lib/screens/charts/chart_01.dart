@@ -3,18 +3,18 @@
 import 'package:charts_flutter/flutter.dart' as charts;
 import 'package:flutter/material.dart';
 
-class DonutAutoLabelChart extends StatefulWidget {
-  _DonutAutoLabelChartState createState() => _DonutAutoLabelChartState();
+class PosicaoFinancMut extends StatefulWidget {
+  _PosicaoFinancMutState createState() => _PosicaoFinancMutState();
 }
 
-class _DonutAutoLabelChartState extends State<DonutAutoLabelChart> {
+class _PosicaoFinancMutState extends State<PosicaoFinancMut> {
   List<charts.Series> seriesList;
 
   static List<charts.Series<LinearSales, String>> _createSampleData() {
     final data = [
-      LinearSales('Ativo', 70, Color(0xff51FC80)),
-      LinearSales('Liquidado', 18, Color(0xff38B2FC)),
-      LinearSales('Cancelado', 12, Color(0xffFC5154)),
+      LinearSales('Mutuário Final', 30, Color(0xff83CEFD)),
+      LinearSales('Plano Empresário', 70, Color(0xff38B2FC)),
+      
     ];
 
     return [
@@ -45,7 +45,7 @@ class _DonutAutoLabelChartState extends State<DonutAutoLabelChart> {
         animationDuration: Duration(seconds: 2),
         behaviors: [new charts.DatumLegend()],
         defaultRenderer: charts.ArcRendererConfig(
-            arcWidth: 40, arcRendererDecorators: [charts.ArcLabelDecorator()]));
+            arcWidth: 100, arcRendererDecorators: [charts.ArcLabelDecorator()]));
   }
 
   /// Create one series with sample hard coded data.

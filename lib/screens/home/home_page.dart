@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dashboard/screens/appbar/appbar_page.dart';
 import 'package:flutter_dashboard/screens/charts/chart.dart';
+import 'package:flutter_dashboard/screens/charts/chart_01.dart';
 import 'package:flutter_dashboard/screens/charts/chart_line.dart';
 import 'package:flutter_dashboard/screens/charts/chart_pie.dart';
 import 'package:flutter_dashboard/screens/charts/charts_page.dart';
@@ -171,13 +172,18 @@ class _HomePageState extends State<HomePage> {
                               margin: EdgeInsets.all(10),
                               height: 300,
                               decoration: BoxDecoration(
-                                color: Colors.yellow,
-                                border:
-                                    Border.all(color: Colors.black, width: 1),
+                                color: Colors.white,
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(5)),
+                                    boxShadow: [
+                BoxShadow(
+                  blurRadius: 7.0,
+                  color: Colors.grey.withOpacity(.2),
+                  offset: Offset(5.0, 6.0),
+                ),
+              ],
                               ),
-                              child: Chart02(),
+                              child: PosicaoFinancMut(),
                             ),
                           ),
                           Expanded(
@@ -186,11 +192,16 @@ class _HomePageState extends State<HomePage> {
                               margin: EdgeInsets.all(10),
                               height: 300,
                               decoration: BoxDecoration(
-                                color: Colors.yellow,
-                                border:
-                                    Border.all(color: Colors.black, width: 1),
+                                color: Colors.white,
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(5)),
+                                    boxShadow: [
+                BoxShadow(
+                  blurRadius: 7.0,
+                  color: Colors.grey.withOpacity(.2),
+                  offset: Offset(5.0, 6.0),
+                ),
+              ],
                               ),
                               child: Chart03(),
                             ),
