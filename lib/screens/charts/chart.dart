@@ -27,7 +27,7 @@ class _DonutAutoLabelChartState extends State<DonutAutoLabelChart> {
             charts.ColorUtil.fromDartColor(sales.colorgraf),
         data: data,
         // Set a label accessor to control the text of the arc label.
-        labelAccessorFn: (LinearSales row, _) => '${row.sales}',
+        labelAccessorFn: (LinearSales row, _) => '${row.sales}%',
       )
     ];
   }
@@ -41,9 +41,9 @@ class _DonutAutoLabelChartState extends State<DonutAutoLabelChart> {
   @override
   Widget build(BuildContext context) {
     return charts.PieChart(seriesList,
-    animate: true,
-                              animationDuration: Duration(seconds: 5),
-    behaviors: [new charts.DatumLegend()],
+        animate: true,
+        animationDuration: Duration(seconds: 5),
+        behaviors: [new charts.DatumLegend()],
         defaultRenderer: charts.ArcRendererConfig(
             arcWidth: 40, arcRendererDecorators: [charts.ArcLabelDecorator()]));
   }
@@ -55,6 +55,7 @@ class _DonutAutoLabelChartState extends State<DonutAutoLabelChart> {
 /// Sample linear data type.
 class LinearSales {
   final String active;
+  
   final int sales;
   final Color colorgraf;
 
