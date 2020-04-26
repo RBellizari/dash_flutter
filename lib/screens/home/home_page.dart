@@ -3,6 +3,7 @@ import 'package:flutter_dashboard/screens/appbar/appbar_page.dart';
 import 'package:flutter_dashboard/screens/charts/chart.dart';
 import 'package:flutter_dashboard/screens/charts/chart_01.dart';
 import 'package:flutter_dashboard/screens/charts/chart_02.dart';
+import 'package:flutter_dashboard/screens/charts/chart_04.dart';
 import 'package:flutter_dashboard/screens/charts/chart_line.dart';
 import 'package:flutter_dashboard/screens/charts/chart_pie.dart';
 import 'package:flutter_dashboard/screens/charts/charts_page.dart';
@@ -237,11 +238,11 @@ class _HomePageState extends State<HomePage> {
                                   children: <Widget>[
                                     Expanded(
                                       flex: 4,
-                                      child: DonutAutoLabelChart(),
+                                      child: Chart03(),
                                     ),
                                      Expanded(
                                        flex: 8,
-                                      child: StackedBarChart(),
+                                      child: Chart04(),
                                     )
                                   ]
                                 )
