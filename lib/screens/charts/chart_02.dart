@@ -19,9 +19,9 @@ List<charts.Series> seriesList;
 /// Create series list with multiple series
   static List<charts.Series<OrdinalSales, String>> _createSampleData() {
     final desktopSalesData = [
-       OrdinalSales('Plano Empresário', 5, 10,20),
-       OrdinalSales('Mutuário Final', 25, 20, 30),
-       OrdinalSales('Total', 100, 30, 40),
+       OrdinalSales('Plano Empresário', 50,0,50),
+       OrdinalSales('Mutuário Final', 25, 10, 25),
+       OrdinalSales('Total', 70, 10, 70),
       
     ];
 
@@ -34,19 +34,22 @@ List<charts.Series> seriesList;
         id: 'Saldo Atual',
         domainFn: (OrdinalSales sales, _) => sales.year,
         measureFn: (OrdinalSales sales, _) => sales.sales,
+        colorFn: (__, _) => charts.ColorUtil.fromDartColor(Color(0xff51FC80)),
         data: desktopSalesData,
       ),
       charts.Series<OrdinalSales, String>(
-        id: 'Saldo atraso',
+        id: 'Saldo em Atraso',
         domainFn: (OrdinalSales sales1, _) => sales1.year,
         measureFn: (OrdinalSales sales1, _) => sales1.sales,
+        colorFn: (__, _) => charts.ColorUtil.fromDartColor(Color(0xffFC5154)),
         data: desktopSalesData,
       ),
 
        charts.Series<OrdinalSales, String>(
-        id: 'Saldo atraso',
+        id: 'Saldo Devedor Total',
         domainFn: (OrdinalSales sales2, _) => sales2.year,
         measureFn: (OrdinalSales sales2, _) => sales2.sales,
+        colorFn: (__, _) => charts.ColorUtil.fromDartColor(Color(0xff38B2FC)),
         data: desktopSalesData,
       ),
      
@@ -64,7 +67,7 @@ List<charts.Series> seriesList;
     return new charts.BarChart(
       seriesList,
       behaviors: [new charts.SeriesLegend()],
-      barGroupingType: charts.BarGroupingType.stacked,
+      //barGroupingType: charts.BarGroupingType.stacked,
     );
   }
 
