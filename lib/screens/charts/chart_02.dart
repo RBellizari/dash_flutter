@@ -19,41 +19,41 @@ List<charts.Series> seriesList;
 /// Create series list with multiple series
   static List<charts.Series<OrdinalSales, String>> _createSampleData() {
     final desktopSalesData = [
-      new OrdinalSales('2014', 5),
-      new OrdinalSales('2015', 25),
-      new OrdinalSales('2016', 100),
-      new OrdinalSales('2017', 75),
+       OrdinalSales('Plano Empresário', 5),
+       OrdinalSales('Mutuário Final', 25),
+       OrdinalSales('2016', 100),
+      
     ];
 
     final tableSalesData = [
-      new OrdinalSales('2014', 25),
-      new OrdinalSales('2015', 50),
-      new OrdinalSales('2016', 10),
-      new OrdinalSales('2017', 20),
+       OrdinalSales('Plano Empresário', 25),
+       OrdinalSales('Mutuário Final', 50),
+       OrdinalSales('2016', 10),
+       
     ];
 
     final mobileSalesData = [
-      new OrdinalSales('2014', 10),
-      new OrdinalSales('2015', 15),
-      new OrdinalSales('2016', 50),
-      new OrdinalSales('2017', 45),
+       OrdinalSales('Plano Empresário', 10),
+       OrdinalSales('Mutuário Final', 15),
+       OrdinalSales('Mutuário Final', 50),
+      
     ];
 
     return [
       new charts.Series<OrdinalSales, String>(
-        id: 'Desktop',
+        id: 'Saldo Atual',
         domainFn: (OrdinalSales sales, _) => sales.year,
         measureFn: (OrdinalSales sales, _) => sales.sales,
         data: desktopSalesData,
       ),
       new charts.Series<OrdinalSales, String>(
-        id: 'Tablet',
+        id: 'Saldo em Atraso',
         domainFn: (OrdinalSales sales, _) => sales.year,
         measureFn: (OrdinalSales sales, _) => sales.sales,
         data: tableSalesData,
       ),
       new charts.Series<OrdinalSales, String>(
-        id: 'Mobile',
+        id: 'Saldo Devedor Total',
         domainFn: (OrdinalSales sales, _) => sales.year,
         measureFn: (OrdinalSales sales, _) => sales.sales,
         data: mobileSalesData,
@@ -71,7 +71,7 @@ List<charts.Series> seriesList;
   Widget build(BuildContext context) {
     return new charts.BarChart(
       seriesList,
-     
+      behaviors: [new charts.SeriesLegend()],
       barGroupingType: charts.BarGroupingType.stacked,
     );
   }
