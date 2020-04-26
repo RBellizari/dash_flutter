@@ -25,7 +25,7 @@ class _DonutAutoLabelChartState extends State<DonutAutoLabelChart> {
         measureFn: (LinearSales sales, _) => sales.sales,
         data: data,
         // Set a label accessor to control the text of the arc label.
-        labelAccessorFn: (LinearSales row, _) => '${row.year}: ${row.sales}',
+        labelAccessorFn: (LinearSales row, _) => '${row.sales}',
       )
     ];
   }
@@ -40,7 +40,7 @@ class _DonutAutoLabelChartState extends State<DonutAutoLabelChart> {
   Widget build(BuildContext context) {
     return charts.PieChart(seriesList,
         defaultRenderer: charts.ArcRendererConfig(
-            arcWidth: 30, arcRendererDecorators: [charts.ArcLabelDecorator()]));
+            arcWidth: 50, arcRendererDecorators: [charts.ArcLabelDecorator()]));
   }
 
   /// Create one series with sample hard coded data.
