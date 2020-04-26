@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_dashboard/screens/appbar/appbar_page.dart';
 import 'package:flutter_dashboard/screens/charts/chart.dart';
 import 'package:flutter_dashboard/screens/charts/chart_01.dart';
+import 'package:flutter_dashboard/screens/charts/chart_02.dart';
 import 'package:flutter_dashboard/screens/charts/chart_line.dart';
 import 'package:flutter_dashboard/screens/charts/chart_pie.dart';
 import 'package:flutter_dashboard/screens/charts/charts_page.dart';
@@ -70,253 +71,248 @@ class _HomePageState extends State<HomePage> {
             Expanded(
               flex: 8,
               child: Container(
-               
                 width: double.infinity,
                 color: const Color(0xFFf6f5fb),
-                child: 
-                 SingleChildScrollView(
-                 child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.stretch,
-                    children: <Widget>[
-                      //Operações
-                      Container(
-                        padding: EdgeInsets.all(10),
-                        child: Row(children: <Widget>[
-                          Expanded(
-                            flex: 3,
-                            child: Container(
-                              margin: EdgeInsets.all(10),
-                              height: 200,
-                              decoration: BoxDecoration(
-                                color: Colors.yellow,
-                                border:
-                                    Border.all(color: Colors.black, width: 1),
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(5)),
+                child: SingleChildScrollView(
+                  child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.stretch,
+                      children: <Widget>[
+                        //Operações
+                        Container(
+                          padding: EdgeInsets.all(10),
+                          child: Row(children: <Widget>[
+                            Expanded(
+                              flex: 3,
+                              child: Container(
+                                margin: EdgeInsets.all(10),
+                                height: 200,
+                                decoration: BoxDecoration(
+                                  color: Colors.yellow,
+                                  border:
+                                      Border.all(color: Colors.black, width: 1),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(5)),
+                                ),
                               ),
                             ),
-                          ),
-                          Expanded(
-                            flex: 3,
-                            child: Container(
-                              margin: EdgeInsets.all(10),
-                              height: 200,
-                              decoration: BoxDecoration(
-                                color: Colors.yellow,
-                                border:
-                                    Border.all(color: Colors.black, width: 1),
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(5)),
+                            Expanded(
+                              flex: 3,
+                              child: Container(
+                                margin: EdgeInsets.all(10),
+                                height: 200,
+                                decoration: BoxDecoration(
+                                  color: Colors.yellow,
+                                  border:
+                                      Border.all(color: Colors.black, width: 1),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(5)),
+                                ),
                               ),
                             ),
-                          ),
-                          Expanded(
-                            flex: 3,
-                            child: Container(
-                              margin: EdgeInsets.all(10),
-                              height: 200,
-                              decoration: BoxDecoration(
-                                color: Colors.yellow,
-                                border:
-                                    Border.all(color: Colors.black, width: 1),
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(5)),
+                            Expanded(
+                              flex: 3,
+                              child: Container(
+                                margin: EdgeInsets.all(10),
+                                height: 200,
+                                decoration: BoxDecoration(
+                                  color: Colors.yellow,
+                                  border:
+                                      Border.all(color: Colors.black, width: 1),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(5)),
+                                ),
                               ),
                             ),
-                          ),
-                          Expanded(
-                            flex: 3,
-                            child: Container(
-                              margin: EdgeInsets.all(10),
-                              height: 200,
-                              decoration: BoxDecoration(
-                                color: Colors.yellow,
-                                border:
-                                    Border.all(color: Colors.black, width: 1),
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(5)),
+                            Expanded(
+                              flex: 3,
+                              child: Container(
+                                margin: EdgeInsets.all(10),
+                                height: 200,
+                                decoration: BoxDecoration(
+                                  color: Colors.yellow,
+                                  border:
+                                      Border.all(color: Colors.black, width: 1),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(5)),
+                                ),
                               ),
                             ),
-                          ),
-                        ]),
-                      ),
+                          ]),
+                        ),
 
-                      //Graficos
-                      Container(
-                        padding: EdgeInsets.all(10),
-                        child: Row(children: <Widget>[
-                          Expanded(
-                            flex: 4,
-                            child: Container(
-                              margin: EdgeInsets.all(10),
-                              height: 300,
-                            
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(5)),
-                                    boxShadow: [
-                BoxShadow(
-                  blurRadius: 7.0,
-                  color: Colors.grey.withOpacity(.2),
-                  offset: Offset(5.0, 6.0),
+                        //Graficos
+                        Container(
+                          padding: EdgeInsets.all(10),
+                          child: Row(children: <Widget>[
+                            Expanded(
+                              flex: 4,
+                              child: Container(
+                                margin: EdgeInsets.all(10),
+                                height: 300,
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(5)),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      blurRadius: 7.0,
+                                      color: Colors.grey.withOpacity(.2),
+                                      offset: Offset(5.0, 6.0),
+                                    ),
+                                  ],
+                                ),
+                                child: DonutAutoLabelChart(),
+                              ),
+                            ),
+                            Expanded(
+                              flex: 4,
+                              child: Container(
+                                margin: EdgeInsets.all(10),
+                                height: 300,
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(5)),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      blurRadius: 7.0,
+                                      color: Colors.grey.withOpacity(.2),
+                                      offset: Offset(5.0, 6.0),
+                                    ),
+                                  ],
+                                ),
+                                child: PosicaoFinancMut(),
+                              ),
+                            ),
+                            Expanded(
+                              flex: 4,
+                              child: Container(
+                                margin: EdgeInsets.all(10),
+                                height: 300,
+                                decoration: BoxDecoration(
+                                  color: Colors.white,
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(5)),
+                                  boxShadow: [
+                                    BoxShadow(
+                                      blurRadius: 7.0,
+                                      color: Colors.grey.withOpacity(.2),
+                                      offset: Offset(5.0, 6.0),
+                                    ),
+                                  ],
+                                ),
+                                child: StackedBarChart(),
+                              ),
+                            ),
+                          ]),
+                        ),
+
+                        //Enquadramento
+                        Container(
+                          padding: EdgeInsets.all(10),
+                          child: Row(children: <Widget>[
+                            Expanded(
+                              flex: 8,
+                              child: Container(
+                                margin: EdgeInsets.all(10),
+                                height: 200,
+                                decoration: BoxDecoration(
+                                  color: Colors.yellow,
+                                  border:
+                                      Border.all(color: Colors.black, width: 1),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(5)),
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              flex: 4,
+                              child: Container(
+                                margin: EdgeInsets.all(10),
+                                height: 200,
+                                decoration: BoxDecoration(
+                                  color: Colors.yellow,
+                                  border:
+                                      Border.all(color: Colors.black, width: 1),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(5)),
+                                ),
+                              ),
+                            ),
+                          ]),
+                        ),
+
+                        //Prazo
+                        Container(
+                          padding: EdgeInsets.all(10),
+                          child: Row(children: <Widget>[
+                            Expanded(
+                              flex: 6,
+                              child: Container(
+                                margin: EdgeInsets.all(10),
+                                height: 200,
+                                decoration: BoxDecoration(
+                                  color: Colors.yellow,
+                                  border:
+                                      Border.all(color: Colors.black, width: 1),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(5)),
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              flex: 6,
+                              child: Container(
+                                margin: EdgeInsets.all(10),
+                                height: 200,
+                                decoration: BoxDecoration(
+                                  color: Colors.yellow,
+                                  border:
+                                      Border.all(color: Colors.black, width: 1),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(5)),
+                                ),
+                              ),
+                            ),
+                          ]),
+                        ),
+
+                        //Tarefas
+                        Container(
+                          padding: EdgeInsets.all(10),
+                          child: Row(children: <Widget>[
+                            Expanded(
+                              flex: 6,
+                              child: Container(
+                                margin: EdgeInsets.all(10),
+                                height: 200,
+                                decoration: BoxDecoration(
+                                  color: Colors.yellow,
+                                  border:
+                                      Border.all(color: Colors.black, width: 1),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(5)),
+                                ),
+                              ),
+                            ),
+                            Expanded(
+                              flex: 6,
+                              child: Container(
+                                margin: EdgeInsets.all(10),
+                                height: 200,
+                                decoration: BoxDecoration(
+                                  color: Colors.yellow,
+                                  border:
+                                      Border.all(color: Colors.black, width: 1),
+                                  borderRadius:
+                                      BorderRadius.all(Radius.circular(5)),
+                                ),
+                              ),
+                            ),
+                          ]),
+                        ),
+                      ]),
                 ),
-              ],
-                              ),
-                              child: DonutAutoLabelChart(),
-                            ),
-                          ),
-                          Expanded(
-                            flex: 4,
-                            child: Container(
-                              margin: EdgeInsets.all(10),
-                              height: 300,
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(5)),
-                                    boxShadow: [
-                BoxShadow(
-                  blurRadius: 7.0,
-                  color: Colors.grey.withOpacity(.2),
-                  offset: Offset(5.0, 6.0),
-                ),
-              ],
-                              ),
-                              child: PosicaoFinancMut(),
-                            ),
-                          ),
-                          Expanded(
-                            flex: 4,
-                            child: Container(
-                              margin: EdgeInsets.all(10),
-                              height: 300,
-                              decoration: BoxDecoration(
-                                color: Colors.white,
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(5)),
-                                    boxShadow: [
-                BoxShadow(
-                  blurRadius: 7.0,
-                  color: Colors.grey.withOpacity(.2),
-                  offset: Offset(5.0, 6.0),
-                ),
-              ],
-                              ),
-                              child: Chart03(),
-                            ),
-                          ),
-                        ]),
-                      ),
-
-                      //Enquadramento
-                      Container(
-                        padding: EdgeInsets.all(10),
-                        child: Row(children: <Widget>[
-                          Expanded(
-                            flex: 8,
-                            child: Container(
-                              margin: EdgeInsets.all(10),
-                              height: 200,
-                              decoration: BoxDecoration(
-                                color: Colors.yellow,
-                                border:
-                                    Border.all(color: Colors.black, width: 1),
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(5)),
-                              ),
-                            ),
-                          ),
-                          Expanded(
-                            flex: 4,
-                            child: Container(
-                              margin: EdgeInsets.all(10),
-                              height: 200,
-                              decoration: BoxDecoration(
-                                color: Colors.yellow,
-                                border:
-                                    Border.all(color: Colors.black, width: 1),
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(5)),
-                              ),
-                            ),
-                          ),
-                          
-                        ]),
-                      ),
-
-                      //Prazo
-                      Container(
-                        padding: EdgeInsets.all(10),
-                        child: Row(children: <Widget>[
-                          Expanded(
-                            flex: 6,
-                            child: Container(
-                              margin: EdgeInsets.all(10),
-                              height: 200,
-                              decoration: BoxDecoration(
-                                color: Colors.yellow,
-                                border:
-                                    Border.all(color: Colors.black, width: 1),
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(5)),
-                              ),
-                            ),
-                          ),
-                          Expanded(
-                            flex: 6,
-                            child: Container(
-                              margin: EdgeInsets.all(10),
-                              height: 200,
-                              decoration: BoxDecoration(
-                                color: Colors.yellow,
-                                border:
-                                    Border.all(color: Colors.black, width: 1),
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(5)),
-                              ),
-                            ),
-                          ),
-                          
-                        ]),
-                      ),
-
-                      //Tarefas
-                      Container(
-                        padding: EdgeInsets.all(10),
-                        child: Row(children: <Widget>[
-                          Expanded(
-                            flex: 6,
-                            child: Container(
-                              margin: EdgeInsets.all(10),
-                              height: 200,
-                              decoration: BoxDecoration(
-                                color: Colors.yellow,
-                                border:
-                                    Border.all(color: Colors.black, width: 1),
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(5)),
-                              ),
-                            ),
-                          ),
-                          Expanded(
-                            flex: 6,
-                            child: Container(
-                              margin: EdgeInsets.all(10),
-                              height: 200,
-                              decoration: BoxDecoration(
-                                color: Colors.yellow,
-                                border:
-                                    Border.all(color: Colors.black, width: 1),
-                                borderRadius:
-                                    BorderRadius.all(Radius.circular(5)),
-                              ),
-                            ),
-                          ),
-                          
-                        ]),
-                      ),
-                    ]),),
               ),
             ),
             Expanded(
