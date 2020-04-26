@@ -19,23 +19,23 @@ List<charts.Series> seriesList;
 /// Create series list with multiple series
   static List<charts.Series<OrdinalSales, String>> _createSampleData() {
     final desktopSalesData = [
-       OrdinalSales('Plano Empresário', 50,12,18),
-       OrdinalSales('Mutuário Final', 50, 10, 40),
-       OrdinalSales('Total', 90, 5, 5),
+       OrdinalSales('Plano Empresário', 70,0,0),
+       OrdinalSales('Mutuário Final', 28, 0, 0),
+       OrdinalSales('Total', 58, 0, 0),
       
     ];
 
      final desktopSalesData1 = [
-       OrdinalSales('Plano Empresário', 2,12,18),
-       OrdinalSales('Mutuário Final', 50, 10, 40),
-       OrdinalSales('Total', 90, 5, 5),
+       OrdinalSales('Plano Empresário', 0,0,0),
+       OrdinalSales('Mutuário Final', 2, 0, 0),
+       OrdinalSales('Total', 2, 0, 0),
       
     ];
 
      final desktopSalesData2 = [
-       OrdinalSales('Plano Empresário', 48,12,18),
-       OrdinalSales('Mutuário Final', 50, 10, 40),
-       OrdinalSales('Total', 90, 5, 5),
+       OrdinalSales('Plano Empresário', 70,0,0),
+       OrdinalSales('Mutuário Final', 30, 0, 0),
+       OrdinalSales('Total', 60, 0, 0),
       
     ];
 
