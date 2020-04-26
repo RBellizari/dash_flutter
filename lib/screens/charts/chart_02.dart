@@ -19,9 +19,9 @@ List<charts.Series> seriesList;
 /// Create series list with multiple series
   static List<charts.Series<OrdinalSales, String>> _createSampleData() {
     final desktopSalesData = [
-       OrdinalSales('Plano Empresário', 70,0,0),
-       OrdinalSales('Mutuário Final', 28, 0, 0),
-       OrdinalSales('Total', 58, 0, 0),
+       OrdinalSales('Plano Empresário', 60,0,0),
+       OrdinalSales('Mutuário Final', 18, 0, 0),
+       OrdinalSales('Total', 68, 0, 0),
       
     ];
 
@@ -33,9 +33,9 @@ List<charts.Series> seriesList;
     ];
 
      final desktopSalesData2 = [
-       OrdinalSales('Plano Empresário', 70,0,0),
-       OrdinalSales('Mutuário Final', 30, 0, 0),
-       OrdinalSales('Total', 60, 0, 0),
+       OrdinalSales('Plano Empresário', 60,0,0),
+       OrdinalSales('Mutuário Final', 20, 0, 0),
+       OrdinalSales('Total', 70, 0, 0),
       
     ];
 
@@ -81,7 +81,7 @@ List<charts.Series> seriesList;
     return new charts.BarChart(
       seriesList,
       behaviors: [new charts.SeriesLegend()],
-      barGroupingType: charts.BarGroupingType.stacked,
+      //barGroupingType: charts.BarGroupingType.stacked,
     );
   }
 
