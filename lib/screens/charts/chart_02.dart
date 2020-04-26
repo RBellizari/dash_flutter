@@ -81,7 +81,7 @@ List<charts.Series> seriesList;
     return new charts.BarChart(
       seriesList,
       behaviors: [new charts.SeriesLegend()],
-      //barGroupingType: charts.BarGroupingType.stacked,
+      barGroupingType: charts.BarGroupingType.stacked,
     );
   }
 
