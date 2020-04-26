@@ -20,11 +20,10 @@ class _DonutAutoLabelChartState extends State<DonutAutoLabelChart> {
 
     return [
       charts.Series<LinearSales, int>(
+        //colorFn: (__, _) => charts.ColorUtil.fromDartColor(Color(0xffff9900)),
         id: 'Sales',
         domainFn: (LinearSales sales, _) => sales.year,
         measureFn: (LinearSales sales, _) => sales.sales,
-        //colorFn: (LinearSales sales, _) =>
-          //  charts.ColorUtil.fromDartColor(sales.colorgraf),
         data: data,
         // Set a label accessor to control the text of the arc label.
         labelAccessorFn: (LinearSales row, _) => '${row.year}: ${row.sales}',
@@ -42,7 +41,7 @@ class _DonutAutoLabelChartState extends State<DonutAutoLabelChart> {
   Widget build(BuildContext context) {
     return charts.PieChart(seriesList,
         defaultRenderer: charts.ArcRendererConfig(
-            arcWidth: 60 ));
+            arcWidth: 160, arcRendererDecorators: [charts.ArcLabelDecorator()]));
   }
 
   /// Create one series with sample hard coded data.
@@ -51,9 +50,9 @@ class _DonutAutoLabelChartState extends State<DonutAutoLabelChart> {
 
 /// Sample linear data type.
 class LinearSales {
-  int year;
-  int sales;
-  Color colorgraf;
+  final int year;
+  final int sales;
+  final Color colorgraf;
 
   LinearSales(this.year, this.sales, this.colorgraf);
 }
