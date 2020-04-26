@@ -45,8 +45,8 @@ List<charts.Series> seriesList;
       ),
       new charts.Series<OrdinalSales, String>(
         id: 'Saldo em Atraso',
-        domainFn: (OrdinalSales sales, _) => sales.year,
-        measureFn: (OrdinalSales sales, _) => sales.sales,
+        domainFn: (OrdinalSales sales1, _) => sales1.year,
+        measureFn: (OrdinalSales sales1, _) => sales1.sales1,
         data: tableSalesData,
       ),
       new charts.Series<OrdinalSales, String>(
