@@ -152,14 +152,12 @@ class _HomePageState extends State<HomePage> {
                             
                               decoration: BoxDecoration(
                                 color: Colors.white,
-                                border:
-                                    Border.all(color: Colors.black, width: 0),
                                 borderRadius:
                                     BorderRadius.all(Radius.circular(5)),
                                     boxShadow: [
                 BoxShadow(
                   blurRadius: 5.0,
-                  color: Colors.black.withOpacity(.7),
+                  color: Colors.black.withOpacity(.3),
                   offset: Offset(6.0, 7.0),
                 ),
               ],
