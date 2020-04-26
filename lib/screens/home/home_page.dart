@@ -147,6 +147,7 @@ class _HomePageState extends State<HomePage> {
                             Expanded(
                               flex: 4,
                               child: Container(
+                                padding: EdgeInsets.all(10),
                                 margin: EdgeInsets.all(10),
                                 height: 300,
                                 decoration: BoxDecoration(
@@ -167,6 +168,7 @@ class _HomePageState extends State<HomePage> {
                             Expanded(
                               flex: 4,
                               child: Container(
+                                padding: EdgeInsets.all(10),
                                 margin: EdgeInsets.all(10),
                                 height: 300,
                                 decoration: BoxDecoration(
@@ -187,6 +189,7 @@ class _HomePageState extends State<HomePage> {
                             Expanded(
                               flex: 4,
                               child: Container(
+                                padding: EdgeInsets.all(10),
                                 margin: EdgeInsets.all(10),
                                 height: 300,
                                 decoration: BoxDecoration(
