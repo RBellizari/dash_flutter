@@ -12,8 +12,8 @@ class _DonutAutoLabelChartState extends State<DonutAutoLabelChart> {
 
   static List<charts.Series<LinearSales, String>> _createSampleData() {
     final data = [
-      LinearSales('Ativo', 70, Color(0xff3366cc)),
-      LinearSales('Liquidado', 18, Color(0xffdc3912)),
+      LinearSales('Ativo', 70, Color(0xff73F3A8)),
+      LinearSales('Liquidado', 18, Color(0xff6B98E3)),
       LinearSales('Cancelado', 12, Color(0xff109618)),
     ];
 
