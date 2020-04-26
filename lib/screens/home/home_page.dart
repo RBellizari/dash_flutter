@@ -3,6 +3,7 @@ import 'package:flutter_dashboard/screens/appbar/appbar_page.dart';
 import 'package:flutter_dashboard/screens/charts/chart.dart';
 import 'package:flutter_dashboard/screens/charts/chart_01.dart';
 import 'package:flutter_dashboard/screens/charts/chart_02.dart';
+import 'package:flutter_dashboard/screens/charts/chart_03.dart';
 import 'package:flutter_dashboard/screens/charts/chart_04.dart';
 import 'package:flutter_dashboard/screens/charts/chart_line.dart';
 import 'package:flutter_dashboard/screens/charts/chart_pie.dart';
@@ -238,7 +239,7 @@ class _HomePageState extends State<HomePage> {
                                   children: <Widget>[
                                     Expanded(
                                       flex: 4,
-                                      child: Chart03(),
+                                      child: Chart00(),
                                     ),
                                      Expanded(
                                        flex: 8,

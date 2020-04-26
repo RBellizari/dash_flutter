@@ -3,11 +3,11 @@
 import 'package:charts_flutter/flutter.dart' as charts;
 import 'package:flutter/material.dart';
 
-class Chart03 extends StatefulWidget {
-  _Chart03State createState() => _Chart03State();
+class Chart00 extends StatefulWidget {
+  _Chart00State createState() => _Chart00State();
 }
 
-class _Chart03State extends State<Chart03> {
+class _Chart00State extends State<Chart00> {
   List<charts.Series> seriesList;
 
   static List<charts.Series<LinearSales, String>> _createSampleData() {

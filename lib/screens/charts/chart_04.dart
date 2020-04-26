@@ -29,28 +29,28 @@ class _Chart04State extends State<Chart04> {
 
    static List<charts.Series<OrdinalSales, String>> _createSampleData() {
     final globalSalesData = [
-      new OrdinalSales('2014', 5000),
-      new OrdinalSales('2015', 25000),
-      new OrdinalSales('2016', 100000),
-      new OrdinalSales('2017', 750000),
+      new OrdinalSales('CHC', 5),
+      new OrdinalSales('CHH', 7),
+      new OrdinalSales('SFH', 23),
+     
     ];
 
     final losAngelesSalesData = [
-      new OrdinalSales('2014', 25),
-      new OrdinalSales('2015', 50),
-      new OrdinalSales('2016', 10),
-      new OrdinalSales('2017', 20),
+      new OrdinalSales('CHC', 3),
+      new OrdinalSales('CHH', 4),
+      new OrdinalSales('SFH', 8),
+      
     ];
 
     return [
       new charts.Series<OrdinalSales, String>(
-        id: 'Global Revenue',
+        id: 'Mutuário Final',
         domainFn: (OrdinalSales sales, _) => sales.year,
         measureFn: (OrdinalSales sales, _) => sales.sales,
         data: globalSalesData,
       ),
       new charts.Series<OrdinalSales, String>(
-        id: 'Los Angeles Revenue',
+        id: 'Plano Empresário',
         domainFn: (OrdinalSales sales, _) => sales.year,
         measureFn: (OrdinalSales sales, _) => sales.sales,
         data: losAngelesSalesData,
@@ -72,7 +72,7 @@ class _Chart04State extends State<Chart04> {
     // For horizontal bar charts, set the [vertical] flag to false.
     return new charts.BarChart(
       seriesList,
-      
+      behaviors: [new charts.DatumLegend()],
       barGroupingType: charts.BarGroupingType.grouped,
       vertical: false,
       // It is important when using both primary and secondary axes to choose
