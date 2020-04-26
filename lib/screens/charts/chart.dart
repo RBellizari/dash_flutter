@@ -10,19 +10,21 @@ class DonutAutoLabelChart extends StatefulWidget {
 class _DonutAutoLabelChartState extends State<DonutAutoLabelChart> {
   List<charts.Series> seriesList;
 
-  static List<charts.Series<LinearSales, int>> _createSampleData() {
+  static List<charts.Series<LinearSales, String>> _createSampleData() {
     final data = [
-      LinearSales(0, 12, Color(0xff3366cc)),
-      LinearSales(1, 18, Color(0xff3366cc)),
-      LinearSales(2, 70, Color(0xff3366cc)),
+      LinearSales('Ativo', 70, Color(0xff3366cc)),
+      LinearSales('Liquidado', 18, Color(0xffdc3912)),
+      LinearSales('Cancelado', 12, Color(0xff109618)),
     ];
 
     return [
-      charts.Series<LinearSales, int>(
+      charts.Series<LinearSales, String>(
         //colorFn: (__, _) => charts.ColorUtil.fromDartColor(Color(0xffff9900)),
         id: 'Sales',
-        domainFn: (LinearSales sales, _) => sales.year,
+        domainFn: (LinearSales sales, _) => sales.active,
         measureFn: (LinearSales sales, _) => sales.sales,
+        colorFn: (LinearSales sales, _) =>
+            charts.ColorUtil.fromDartColor(sales.colorgraf),
         data: data,
         // Set a label accessor to control the text of the arc label.
         labelAccessorFn: (LinearSales row, _) => '${row.sales}',
@@ -41,7 +43,7 @@ class _DonutAutoLabelChartState extends State<DonutAutoLabelChart> {
     return charts.PieChart(seriesList,
     behaviors: [new charts.DatumLegend()],
         defaultRenderer: charts.ArcRendererConfig(
-            arcWidth: 50, arcRendererDecorators: [charts.ArcLabelDecorator()]));
+            arcWidth: 40, arcRendererDecorators: [charts.ArcLabelDecorator()]));
   }
 
   /// Create one series with sample hard coded data.
@@ -50,9 +52,9 @@ class _DonutAutoLabelChartState extends State<DonutAutoLabelChart> {
 
 /// Sample linear data type.
 class LinearSales {
-  final int year;
+  final String active;
   final int sales;
   final Color colorgraf;
 
-  LinearSales(this.year, this.sales, this.colorgraf);
+  LinearSales(this.active, this.sales, this.colorgraf);
 }
