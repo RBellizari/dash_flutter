@@ -23,8 +23,8 @@ class _DonutAutoLabelChartState extends State<DonutAutoLabelChart> {
         id: 'Sales',
         domainFn: (LinearSales sales, _) => sales.year,
         measureFn: (LinearSales sales, _) => sales.sales,
-        colorFn: (LinearSales task, _) =>
-            charts.ColorUtil.fromDartColor(task.colorgraf),
+        colorFn: (LinearSales sales, _) =>
+            charts.ColorUtil.fromDartColor(sales.colorgraf),
         data: data,
         // Set a label accessor to control the text of the arc label.
         labelAccessorFn: (LinearSales row, _) => '${row.year}: ${row.sales}',
