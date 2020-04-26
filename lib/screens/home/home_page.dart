@@ -236,6 +236,11 @@ class _HomePageState extends State<HomePage> {
                                 Row(
                                   children: <Widget>[
                                     Expanded(
+                                      flex: 4,
+                                      child: DonutAutoLabelChart(),
+                                    ),
+                                     Expanded(
+                                       flex: 8,
                                       child: StackedBarChart(),
                                     )
                                   ]
