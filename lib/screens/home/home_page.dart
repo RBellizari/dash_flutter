@@ -156,9 +156,9 @@ class _HomePageState extends State<HomePage> {
                                     BorderRadius.all(Radius.circular(5)),
                                     boxShadow: [
                 BoxShadow(
-                  blurRadius: 5.0,
-                  color: Colors.black.withOpacity(.3),
-                  offset: Offset(6.0, 7.0),
+                  blurRadius: 7.0,
+                  color: Colors.grey.withOpacity(.2),
+                  offset: Offset(5.0, 6.0),
                 ),
               ],
                               ),
