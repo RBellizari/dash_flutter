@@ -62,6 +62,12 @@ List<charts.Series> seriesList;
   }
 
   @override
+  void initState() {
+    super.initState();
+    seriesList = _createSampleData();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return new charts.BarChart(
       seriesList,
