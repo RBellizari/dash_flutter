@@ -29,18 +29,14 @@ class _Chart05State extends State<Chart05> {
 
    static List<charts.Series<OrdinalSales, String>> _createSampleData() {
     final globalSalesData = [
-      new OrdinalSales('CHC', 5, Color(0xffFC5154)),
-      new OrdinalSales('CHH', 7, Color(0xffFC5154)),
-      new OrdinalSales('SFH', 23, Color(0xffFC5154)),
+      new OrdinalSales('PE', 15, Color(0xff38B2FC)),
+      new OrdinalSales('AQUISIÇÃO', 15, Color(0xff38B2FC)),
+      new OrdinalSales('HOME', 10, Color(0xff38B2FC)),
+      new OrdinalSales('REPASSE', 10, Color(0xff38B2FC)),
      
     ];
 
-    final losAngelesSalesData = [
-      new OrdinalSales('CHC', 3, Color(0xff38B2FC)),
-      new OrdinalSales('CHH', 4, Color(0xff38B2FC)),
-      new OrdinalSales('SFH', 8, Color(0xff38B2FC)),
-      
-    ];
+    
 
     return [
       new charts.Series<OrdinalSales, String>(
@@ -53,17 +49,6 @@ class _Chart05State extends State<Chart05> {
         labelAccessorFn: (OrdinalSales sales, _) =>
               '${sales.sales.toString()}'
       ),
-      new charts.Series<OrdinalSales, String>(
-        id: 'Plano Empresário',
-        domainFn: (OrdinalSales sales, _) => sales.year,
-        measureFn: (OrdinalSales sales, _) => sales.sales,
-        data: losAngelesSalesData,
-        colorFn: (OrdinalSales sales, _) =>
-            charts.ColorUtil.fromDartColor(sales.colorgraf),
-        labelAccessorFn: (OrdinalSales sales, _) =>
-              '${sales.sales.toString()}'
-        
-      )
       // Set the 'Los Angeles Revenue' series to use the secondary measure axis.
       // All series that have this set will use the secondary measure axis.
       // All other series will use the primary measure axis.
@@ -81,7 +66,7 @@ class _Chart05State extends State<Chart05> {
     // For horizontal bar charts, set the [vertical] flag to false.
     return new charts.BarChart(
       seriesList,
-      behaviors: [new charts.SeriesLegend()],
+      //behaviors: [new charts.SeriesLegend()],
       barRendererDecorator: new charts.BarLabelDecorator<String>(),
       barGroupingType: charts.BarGroupingType.grouped,
       vertical: true,
