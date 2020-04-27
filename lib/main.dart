@@ -12,10 +12,25 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Dashboard - Recebiveis1',
-      theme: ThemeData.light(),
+      //theme: ThemeData.light(),
+      
       home: Scaffold(
-        appBar: AppBar(
-          title: Text("DashBoard"),
+        appBar: PreferredSize(
+          child: Container(
+            decoration: BoxDecoration(boxShadow: [
+              BoxShadow(
+                color: Colors.grey,
+                offset: Offset(0, 3.0),
+                blurRadius: 7.0,
+              )
+            ]),
+            child: AppBar(
+              backgroundColor: Color(0xFFFFFFFF),
+              elevation: 0.0,
+              title: Text("Test"),
+            ),
+          ),
+          preferredSize: Size.fromHeight(kToolbarHeight),
         ),
         body: HomePage(),
       )

@@ -16,22 +16,24 @@ import 'package:charts_flutter/flutter.dart' as charts;
 ///
 /// Note: primary and secondary may flip left and right positioning when
 /// RTL.flipAxisLocations is set.
-class Chart05 extends StatefulWidget {
+class Chart06 extends StatefulWidget {
  
   
-   _Chart05State createState() => _Chart05State();
+   _Chart06State createState() => _Chart06State();
 
 }
 
-class _Chart05State extends State<Chart05> {
+class _Chart06State extends State<Chart06> {
    List<charts.Series> seriesList;
 
    static List<charts.Series<OrdinalSales, String>> _createSampleData() {
     final globalSalesData = [
-       OrdinalSales('PE', 15, Color(0xff38B2FC)),
-       OrdinalSales('AQUISIÇÃO', 15, Color(0xff38B2FC)),
-       OrdinalSales('HOME', 10, Color(0xff38B2FC)),
-       OrdinalSales('REPASSE', 10, Color(0xff38B2FC)),
+       OrdinalSales('241 a 360 meses', 46, Color(0xffFC5154)),
+       OrdinalSales('121 a 240 meses', 2, Color(0xffFC5154)),
+       OrdinalSales('61 a 120 meses', 2, Color(0xffFC5154)),
+       OrdinalSales('37 a 60 meses', 0, Color(0xffFC5154)),
+       OrdinalSales('25 a 36 meses', 0, Color(0xffFC5154)),
+       OrdinalSales('12 a 24 meses', 0, Color(0xffFC5154)),
      
     ];
 
@@ -70,7 +72,7 @@ class _Chart05State extends State<Chart05> {
       //behaviors: [new charts.SeriesLegend()],
       barRendererDecorator:  charts.BarLabelDecorator<String>(),
       barGroupingType: charts.BarGroupingType.grouped,
-      vertical: true,
+      vertical: false,
       // It is important when using both primar  and secondary axes to choose
       // the same number of ticks for both sides to get the gridlines to line
       // up.

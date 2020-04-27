@@ -43,7 +43,7 @@ class _DonutAutoLabelChartState extends State<DonutAutoLabelChart> {
     return charts.PieChart(seriesList,
         animate: true,
         animationDuration: Duration(seconds: 2),
-        behaviors: [new charts.DatumLegend()],
+        behaviors: [charts.DatumLegend()],
         defaultRenderer: charts.ArcRendererConfig(
             arcWidth: 40, arcRendererDecorators: [charts.ArcLabelDecorator()]));
   }

@@ -146,7 +146,6 @@ class _Chart02State extends State<Chart02> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _seriesData = List<charts.Series<Pollution, String>>();
     _seriesPieData = List<charts.Series<Task, String>>();

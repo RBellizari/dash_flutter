@@ -24,7 +24,6 @@ class Chart04 extends StatefulWidget {
 }
 
 class _Chart04State extends State<Chart04> {
-   static const secondaryMeasureAxisId = 'secondaryMeasureAxisId';
    List<charts.Series> seriesList;
 
    static List<charts.Series<OrdinalSales, String>> _createSampleData() {
@@ -81,6 +80,8 @@ class _Chart04State extends State<Chart04> {
     // For horizontal bar charts, set the [vertical] flag to false.
     return new charts.BarChart(
       seriesList,
+       animate: true,
+        animationDuration: Duration(seconds: 2),
       behaviors: [new charts.SeriesLegend()],
       barRendererDecorator: new charts.BarLabelDecorator<String>(),
       barGroupingType: charts.BarGroupingType.grouped,

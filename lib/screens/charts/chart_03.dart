@@ -43,7 +43,7 @@ class _Chart00State extends State<Chart00> {
     return charts.PieChart(seriesList,
         animate: true,
         animationDuration: Duration(seconds: 2),
-        behaviors: [new charts.DatumLegend()],
+        behaviors: [charts.DatumLegend()],
         defaultRenderer: charts.ArcRendererConfig(
             arcWidth: 100, arcRendererDecorators: [charts.ArcLabelDecorator()]));
   }

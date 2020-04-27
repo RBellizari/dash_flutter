@@ -78,9 +78,11 @@ List<charts.Series> seriesList;
 
   @override
   Widget build(BuildContext context) {
-    return new charts.BarChart(
+    return  charts.BarChart(
       seriesList,
-      behaviors: [new charts.SeriesLegend()],
+       animate: true,
+        animationDuration: Duration(seconds: 2),
+      behaviors:  [charts.SeriesLegend()],
       barGroupingType: charts.BarGroupingType.stacked,
     );
   }
