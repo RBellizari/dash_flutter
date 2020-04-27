@@ -51,7 +51,7 @@ class _Chart04State extends State<Chart04> {
         colorFn: (OrdinalSales sales, _) =>
             charts.ColorUtil.fromDartColor(sales.colorgraf),
         labelAccessorFn: (OrdinalSales sales, _) =>
-              '${sales.year}: \$${sales.sales.toString()}'
+              '${sales.year}: ${sales.sales.toString()}'
       ),
       new charts.Series<OrdinalSales, String>(
         id: 'Plano Empresário',
@@ -61,7 +61,7 @@ class _Chart04State extends State<Chart04> {
         colorFn: (OrdinalSales sales, _) =>
             charts.ColorUtil.fromDartColor(sales.colorgraf),
         labelAccessorFn: (OrdinalSales sales, _) =>
-              '${sales.year}: \$${sales.sales.toString()}'
+              '${sales.year}: ${sales.sales.toString()}'
         
       )..setAttribute(charts.measureAxisIdKey, secondaryMeasureAxisId)
       // Set the 'Los Angeles Revenue' series to use the secondary measure axis.
@@ -81,7 +81,7 @@ class _Chart04State extends State<Chart04> {
     // For horizontal bar charts, set the [vertical] flag to false.
     return new charts.BarChart(
       seriesList,
-      behaviors: [new charts.DatumLegend()],
+      behaviors: [new charts.SeriesLegend()],
       barGroupingType: charts.BarGroupingType.grouped,
       vertical: false,
       // It is important when using both primary and secondary axes to choose
