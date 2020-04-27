@@ -82,6 +82,7 @@ class _Chart04State extends State<Chart04> {
     return new charts.BarChart(
       seriesList,
       behaviors: [new charts.SeriesLegend()],
+      barRendererDecorator: new charts.BarLabelDecorator<String>(),
       barGroupingType: charts.BarGroupingType.grouped,
       vertical: false,
       // It is important when using both primary and secondary axes to choose
