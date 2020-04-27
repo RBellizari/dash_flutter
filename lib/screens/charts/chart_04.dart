@@ -63,7 +63,7 @@ class _Chart04State extends State<Chart04> {
         labelAccessorFn: (OrdinalSales sales, _) =>
               '${sales.sales.toString()}'
         
-      )..setAttribute(charts.measureAxisIdKey, secondaryMeasureAxisId)
+      )
       // Set the 'Los Angeles Revenue' series to use the secondary measure axis.
       // All series that have this set will use the secondary measure axis.
       // All other series will use the primary measure axis.
@@ -88,12 +88,6 @@ class _Chart04State extends State<Chart04> {
       // It is important when using both primary and secondary axes to choose
       // the same number of ticks for both sides to get the gridlines to line
       // up.
-      primaryMeasureAxis: new charts.NumericAxisSpec(
-          tickProviderSpec:
-              new charts.BasicNumericTickProviderSpec(desiredTickCount: 3)),
-      secondaryMeasureAxis: new charts.NumericAxisSpec(
-          tickProviderSpec:
-              new charts.BasicNumericTickProviderSpec(desiredTickCount: 3)),
     );
   }
 
