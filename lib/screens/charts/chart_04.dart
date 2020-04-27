@@ -29,16 +29,16 @@ class _Chart04State extends State<Chart04> {
 
    static List<charts.Series<OrdinalSales, String>> _createSampleData() {
     final globalSalesData = [
-      new OrdinalSales('CHC', 5),
-      new OrdinalSales('CHH', 7),
-      new OrdinalSales('SFH', 23),
+      new OrdinalSales('CHC', 5, Color(0xff38B2FC)),
+      new OrdinalSales('CHH', 7, Color(0xff38B2FC)),
+      new OrdinalSales('SFH', 23, Color(0xff38B2FC)),
      
     ];
 
     final losAngelesSalesData = [
-      new OrdinalSales('CHC', 3),
-      new OrdinalSales('CHH', 4),
-      new OrdinalSales('SFH', 8),
+      new OrdinalSales('CHC', 3, Color(0xffFC5154)),
+      new OrdinalSales('CHH', 4, Color(0xffFC5154)),
+      new OrdinalSales('SFH', 8, Color(0xffFC5154)),
       
     ];
 
@@ -48,14 +48,20 @@ class _Chart04State extends State<Chart04> {
         domainFn: (OrdinalSales sales, _) => sales.year,
         measureFn: (OrdinalSales sales, _) => sales.sales,
         data: globalSalesData,
-        labelAccessorFn: (OrdinalSales row, _) => '${row.sales}',
+        colorFn: (OrdinalSales sales, _) =>
+            charts.ColorUtil.fromDartColor(sales.colorgraf),
+        labelAccessorFn: (OrdinalSales sales, _) =>
+              '${sales.year}: \$${sales.sales.toString()}'
       ),
       new charts.Series<OrdinalSales, String>(
         id: 'Plano Empresário',
         domainFn: (OrdinalSales sales, _) => sales.year,
         measureFn: (OrdinalSales sales, _) => sales.sales,
         data: losAngelesSalesData,
-        labelAccessorFn: (OrdinalSales row, _) => '${row.sales}',
+        colorFn: (OrdinalSales sales, _) =>
+            charts.ColorUtil.fromDartColor(sales.colorgraf),
+        labelAccessorFn: (OrdinalSales sales, _) =>
+              '${sales.year}: \$${sales.sales.toString()}'
         
       )..setAttribute(charts.measureAxisIdKey, secondaryMeasureAxisId)
       // Set the 'Los Angeles Revenue' series to use the secondary measure axis.
@@ -98,6 +104,7 @@ class _Chart04State extends State<Chart04> {
 class OrdinalSales {
   final String year;
   final int sales;
+  final Color colorgraf;
 
-  OrdinalSales(this.year, this.sales);
+  OrdinalSales(this.year, this.sales, this.colorgraf);
 }
