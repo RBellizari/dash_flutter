@@ -48,12 +48,15 @@ class _Chart04State extends State<Chart04> {
         domainFn: (OrdinalSales sales, _) => sales.year,
         measureFn: (OrdinalSales sales, _) => sales.sales,
         data: globalSalesData,
+        labelAccessorFn: (OrdinalSales row, _) => '${row.sales}',
       ),
       new charts.Series<OrdinalSales, String>(
         id: 'Plano Empresário',
         domainFn: (OrdinalSales sales, _) => sales.year,
         measureFn: (OrdinalSales sales, _) => sales.sales,
         data: losAngelesSalesData,
+        labelAccessorFn: (OrdinalSales row, _) => '${row.sales}',
+        
       )..setAttribute(charts.measureAxisIdKey, secondaryMeasureAxisId)
       // Set the 'Los Angeles Revenue' series to use the secondary measure axis.
       // All series that have this set will use the secondary measure axis.
