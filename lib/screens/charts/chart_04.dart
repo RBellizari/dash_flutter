@@ -29,16 +29,16 @@ class _Chart04State extends State<Chart04> {
 
    static List<charts.Series<OrdinalSales, String>> _createSampleData() {
     final globalSalesData = [
-      new OrdinalSales('CHC', 5, Color(0xff38B2FC)),
-      new OrdinalSales('CHH', 7, Color(0xff38B2FC)),
-      new OrdinalSales('SFH', 23, Color(0xff38B2FC)),
+      new OrdinalSales('CHC', 5, Color(0xffFC5154)),
+      new OrdinalSales('CHH', 7, Color(0xffFC5154)),
+      new OrdinalSales('SFH', 23, Color(0xffFC5154)),
      
     ];
 
     final losAngelesSalesData = [
-      new OrdinalSales('CHC', 3, Color(0xffFC5154)),
-      new OrdinalSales('CHH', 4, Color(0xffFC5154)),
-      new OrdinalSales('SFH', 8, Color(0xffFC5154)),
+      new OrdinalSales('CHC', 3, Color(0xff38B2FC)),
+      new OrdinalSales('CHH', 4, Color(0xff38B2FC)),
+      new OrdinalSales('SFH', 8, Color(0xff38B2FC)),
       
     ];
 
@@ -51,7 +51,7 @@ class _Chart04State extends State<Chart04> {
         colorFn: (OrdinalSales sales, _) =>
             charts.ColorUtil.fromDartColor(sales.colorgraf),
         labelAccessorFn: (OrdinalSales sales, _) =>
-              '${sales.year}: ${sales.sales.toString()}'
+              '${sales.sales.toString()}'
       ),
       new charts.Series<OrdinalSales, String>(
         id: 'Plano Empresário',
@@ -61,7 +61,7 @@ class _Chart04State extends State<Chart04> {
         colorFn: (OrdinalSales sales, _) =>
             charts.ColorUtil.fromDartColor(sales.colorgraf),
         labelAccessorFn: (OrdinalSales sales, _) =>
-              '${sales.year}: ${sales.sales.toString()}'
+              '${sales.sales.toString()}'
         
       )..setAttribute(charts.measureAxisIdKey, secondaryMeasureAxisId)
       // Set the 'Los Angeles Revenue' series to use the secondary measure axis.
